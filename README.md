@@ -1,3 +1,25 @@
+# MIE 286 Project: AI vs. Human Image Detection
+
+## Technical Requirements
+
+To run this environment, you must have **Node.js** installed.
+
+### Core Dependencies
+
+- **Next.js (16.1.6):** Framework for the experimental web interface.
+- **Firebase (12.8.0):** Used for real-time data collection of response times and accuracy.
+- **Tailwind CSS (4.0):** For UI styling and image layout.
+- **Lucide-React:** Icon library for feedback UI.
+
+### Development Tools
+
+- **TypeScript:** For type-safe data handling.
+- **ESLint:** To ensure code quality across the team.
+
+## Setup Instructions
+
+Run `npm install` to download all dependencies.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
