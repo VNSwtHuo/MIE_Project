@@ -20,7 +20,7 @@ export function ImageEvaluationPage({
   const [answers, setAnswers] = useState<Answer[]>([]);
   const [startTime, setStartTime] = useState<number>(Date.now());
   const [inlineFeedback, setInlineFeedback] = useState<Answer | null>(null);
-  const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
+  // const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
   const [elapsedTime, setElapsedTime] = useState<number>(0);
   const [isTimerPaused, setIsTimerPaused] = useState<boolean>(false);
 

@@ -101,9 +101,6 @@ export function calculateModeStats(
   };
 }
 
-/**
- * Get mode name based on mode flag and order
- */
 export function getModeName(mode1First: boolean, setNumber: 1 | 2): string {
   if (setNumber === 1) {
     return mode1First ? "With Feedback" : "No Feedback";

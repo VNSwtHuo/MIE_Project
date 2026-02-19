@@ -700,7 +700,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
     const [answers, setAnswers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [startTime, setStartTime] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(Date.now());
     const [inlineFeedback, setInlineFeedback] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [enlargedImage, setEnlargedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    // const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
     const [elapsedTime, setElapsedTime] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [isTimerPaused, setIsTimerPaused] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const currentImage = images[currentIndex];
@@ -1056,7 +1056,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
         columnNumber: 5
     }, this);
 }
-_s(ImageEvaluationPage, "c0+pWGTq7YSkx4cjtG/cC7nUVRM=");
+_s(ImageEvaluationPage, "atJi/LEqGWbNMh1dSmRFNUqrdgs=");
 _c = ImageEvaluationPage;
 var _c;
 __turbopack_context__.k.register(_c, "ImageEvaluationPage");
@@ -1774,22 +1774,43 @@ const firebaseConfig = {
     appId: ("TURBOPACK compile-time value", "1:440403940095:web:201263b6a5fb35002bf2ca"),
     measurementId: ("TURBOPACK compile-time value", "G-XPZN8EEMYV")
 };
-// Initialize Firebase unconditionally on client side
+// Validate Firebase configuration
+function validateFirebaseConfig() {
+    const requiredFields = [
+        'apiKey',
+        'authDomain',
+        'projectId',
+        'storageBucket',
+        'messagingSenderId',
+        'appId'
+    ];
+    const missingFields = requiredFields.filter((field)=>!firebaseConfig[field]);
+    if (missingFields.length > 0) {
+        console.error('Missing Firebase configuration:', missingFields);
+        console.error('Please check your .env.local file has all NEXT_PUBLIC_FIREBASE_* variables');
+        return false;
+    }
+    return true;
+}
+// Initialize Firebase only on client side
 let app;
 let db;
 let auth;
 if ("TURBOPACK compile-time truthy", 1) {
-    // Check if Firebase app is already initialized
-    if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getApps"])().length) {
-        app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["initializeApp"])(firebaseConfig);
-    } else {
-        app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getApps"])()[0];
+    // Validate config before initializing
+    if (validateFirebaseConfig()) {
+        // Check if Firebase app is already initialized
+        if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getApps"])().length) {
+            app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["initializeApp"])(firebaseConfig);
+        } else {
+            app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getApps"])()[0];
+        }
+        // Initialize analytics
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$analytics$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getAnalytics"])(app);
+        // Initialize services
+        db = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFirestore"])(app);
+        auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getAuth"])(app);
     }
-    // Initialize analytics
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$analytics$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getAnalytics"])(app);
-    // Initialize services
-    db = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFirestore"])(app);
-    auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getAuth"])(app);
 }
 ;
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {

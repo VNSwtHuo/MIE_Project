@@ -1,5 +1,8 @@
 node_modules/
 .next/
+out/
+dist/
+build/
 .env
 .env.local
 .next-env.d.ts
@@ -8,3 +11,5 @@ node_modules/
 .next/static/
 .next/trace/
 .next/dev/
+*.log
+.DS_Store

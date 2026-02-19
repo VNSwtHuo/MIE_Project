@@ -686,7 +686,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
     const [answers, setAnswers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [startTime, setStartTime] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(Date.now());
     const [inlineFeedback, setInlineFeedback] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [enlargedImage, setEnlargedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    // const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
     const [elapsedTime, setElapsedTime] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [isTimerPaused, setIsTimerPaused] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const currentImage = images[currentIndex];
@@ -1818,7 +1818,25 @@ const firebaseConfig = {
     appId: ("TURBOPACK compile-time value", "1:440403940095:web:201263b6a5fb35002bf2ca"),
     measurementId: ("TURBOPACK compile-time value", "G-XPZN8EEMYV")
 };
-// Initialize Firebase unconditionally on client side
+// Validate Firebase configuration
+function validateFirebaseConfig() {
+    const requiredFields = [
+        'apiKey',
+        'authDomain',
+        'projectId',
+        'storageBucket',
+        'messagingSenderId',
+        'appId'
+    ];
+    const missingFields = requiredFields.filter((field)=>!firebaseConfig[field]);
+    if (missingFields.length > 0) {
+        console.error('Missing Firebase configuration:', missingFields);
+        console.error('Please check your .env.local file has all NEXT_PUBLIC_FIREBASE_* variables');
+        return false;
+    }
+    return true;
+}
+// Initialize Firebase only on client side
 let app;
 let db;
 let auth;
