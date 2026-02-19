@@ -1,2 +1,1857 @@
-[00:00:00.625] Server  LOG     ✓ Ready in 446ms
-[00:00:19.483] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.800] Server  LOG     ✓ Ready in 616ms
+[00:00:05.161] Server  WARN    [2026-02-19T04:01:49.312Z]  @firebase/analytics: "Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context)."
+[00:00:05.325] Server  ERROR   ⨯ ReferenceError: window is not defined
+[00:00:05.491] Server  ERROR   ⨯ ReferenceError: window is not defined
+[00:00:05.610] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.628] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.509] Server  ERROR   ⨯ ReferenceError: window is not defined
+[00:00:06.637] Server  ERROR   ⨯ ReferenceError: window is not defined
+[00:00:49.842] Browser LOG     Quiz data saved successfully:  RFXBlsLsrUyi0y2a1KXx
+[00:00:49.844] Browser LOG     Quiz data successfully saved to Firebase
+[00:02:36.727] Server  LOG     ✓ Compiled in 355ms
+[00:03:48.546] Server  LOG     ✓ Compiled in 52ms
+[00:03:51.189] Server  LOG     ✓ Compiled in 12ms
+[00:08:22.603] Server  LOG     ✓ Compiled in 40ms
+[00:09:02.998] Browser LOG     Quiz data saved successfully:  UvDPKSQRw14wQ2blrZK4
+[00:09:02.999] Browser LOG     Quiz data successfully saved to Firebase
+[00:11:11.502] Server  LOG     ✓ Compiled in 65ms
+[00:11:14.023] Server  LOG     ✓ Compiled in 14ms
+[00:11:25.317] Server  LOG     ✓ Compiled in 12ms
+[00:11:31.487] Server  LOG     ✓ Compiled in 12ms
+[00:11:38.370] Server  LOG     ✓ Compiled in 11ms
+[00:11:48.637] Server  LOG     ✓ Compiled in 46ms
+[00:11:52.841] Server  LOG     ✓ Compiled in 28ms
+[00:12:56.483] Browser LOG     Quiz data saved successfully:  szH40Y4Yqw8POAtxmM1a
+[00:12:56.483] Browser LOG     Quiz data successfully saved to Firebase
+[00:18:13.938] Server  LOG     ✓ Compiled in 18ms
+[00:18:17.497] Server  LOG     ✓ Compiled in 21ms
+[00:18:20.645] Server  LOG     ✓ Compiled in 69ms
+[00:18:24.722] Server  LOG     ✓ Compiled in 12ms
+[00:18:31.346] Server  LOG     ✓ Compiled in 65ms
+[00:18:34.521] Server  LOG     ✓ Compiled in 25ms
+[00:18:40.246] Server  LOG     ✓ Compiled in 23ms
+[00:18:42.901] Server  LOG     ✓ Compiled in 22ms
+[00:30:03.150] Server  LOG     ✓ Compiled in 53ms
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export getAnswerSet doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export getAnswerSet was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import getModeName?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export getAnswerSet doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export getAnswerSet was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import getModeName?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export getAnswerSet doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export getAnswerSet was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import getModeName?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export getAnswerSet doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export getAnswerSet was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import getModeName?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export getAnswerSet doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export getAnswerSet was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import getModeName?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:03.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export getAnswerSet doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export getAnswerSet was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import getModeName?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:13.582] Server  LOG     ✓ Compiled in 20ms
+[00:30:14.658] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:14.658] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:14.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:14.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:14.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:14.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:24.964] Server  LOG     ✓ Compiled in 15ms
+[00:30:25.661] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:25.661] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:25.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:25.662] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:25.663] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:25.663] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:34.897] Server  LOG     ✓ Compiled in 21ms
+[00:30:35.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:35.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:35.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:35.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:35.661] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:35.661] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:46.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:46.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:46.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:46.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:46.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:46.660] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:47.659] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:47.659] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:47.659] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:47.659] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:47.659] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:47.659] Browser ERROR   ./Documents/GitHub/mie_project/components/SummaryPage.tsx:12:1
+Export calculateSetStats doesn't exist in target module
+  10 |   X,
+  11 | } from "lucide-react";
+> 12 | import {
+     | ^^^^^^^^
+> 13 |   Answer,
+     | ^^^^^^^^^
+> 14 |   calculateOverallStats,
+     | ^^^^^^^^^
+> 15 |   calculateSetStats,
+     | ^^^^^^^^^
+> 16 |   calculateModeStats,
+     | ^^^^^^^^^
+> 17 |   getAnswerSet,
+     | ^^^^^^^^^
+> 18 |   getModeName,
+     | ^^^^^^^^^
+> 19 |   formatTimeSeconds,
+     | ^^^^^^^^^
+> 20 | } from "@/lib/quizStatistics";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | interface ImageData {
+  23 |   id: string;
+
+The export calculateSetStats was not found in module [project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-ssr] (ecmascript).
+Did you mean to import calculateModeStats?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/components/SummaryPage.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:30:51.148] Server  LOG     ✓ Compiled in 23ms
+[00:31:01.849] Server  LOG     ✓ Compiled in 36ms
+[00:32:17.227] Server  LOG     ✓ Compiled in 44ms
+[00:32:22.067] Server  LOG     ✓ Compiled in 74ms
+[00:32:24.366] Server  LOG     ✓ Compiled in 29ms
+[00:32:26.655] Server  LOG     ✓ Compiled in 15ms
+[00:33:22.425] Browser LOG     Quiz data saved successfully:  rBEXFkYDrFiseXScR7Lz
+[00:33:22.425] Browser LOG     Quiz data successfully saved to Firebase
+[00:33:55.787] Browser LOG     Quiz data saved successfully:  Scd0vOw8kxNdwUKzZzd6
+[00:33:55.787] Browser LOG     Quiz data successfully saved to Firebase
+[00:34:30.139] Browser LOG     Quiz data saved successfully:  aZE7mXtdQcsVJkroIINT
+[00:34:30.139] Browser LOG     Quiz data successfully saved to Firebase
+[00:36:23.003] Server  LOG     ✓ Compiled in 36ms
+[00:36:46.441] Server  LOG     ✓ Compiled in 25ms
+[00:37:17.039] Server  LOG     ✓ Compiled in 94ms
+[00:37:49.301] Server  LOG     ✓ Compiled in 24ms
+[00:37:57.663] Server  LOG     ✓ Compiled in 17ms
+[00:57:13.298] Server  LOG     ✓ Compiled in 94ms
+[00:58:00.173] Server  LOG     ✓ Compiled in 38ms
+[00:58:38.579] Server  LOG     ✓ Compiled in 36ms
+[00:58:49.380] Server  LOG     ✓ Compiled in 22ms
+[00:59:01.577] Server  LOG     ✓ Compiled in 13ms
+[00:59:06.882] Server  LOG     ✓ Compiled in 11ms
+[00:59:15.543] Server  LOG     ✓ Compiled in 15ms
+[01:00:06.022] Server  LOG     ✓ Compiled in 23ms
+[01:00:12.327] Server  LOG     ✓ Compiled in 23ms
+[01:00:15.149] Server  LOG     ✓ Compiled in 10ms
+[01:01:07.330] Server  LOG     ✓ Compiled in 33ms
+[01:01:37.306] Server  LOG     ✓ Compiled in 12ms
+[01:01:38.851] Server  LOG     ✓ Compiled in 9ms
+[01:02:00.947] Server  LOG     ✓ Compiled in 27ms
+[01:02:13.218] Server  LOG     ✓ Compiled in 14ms
+[01:06:01.268] Server  LOG     ✓ Compiled in 55ms
+[01:06:08.437] Server  LOG     ✓ Compiled in 48ms
+[01:08:31.497] Server  LOG     ✓ Compiled in 27ms
+[01:08:36.458] Server  LOG     ✓ Compiled in 27ms
+[01:08:42.040] Server  LOG     ✓ Compiled in 22ms
+[01:08:55.002] Server  LOG     ✓ Compiled in 22ms
+[01:09:01.438] Server  LOG     ✓ Compiled in 15ms
+[01:09:17.268] Server  LOG     ✓ Compiled in 19ms
+[01:09:18.596] Server  LOG     ✓ Compiled in 20ms
+[01:10:18.496] Server  LOG     ✓ Compiled in 59ms
+[01:10:42.711] Server  LOG     ✓ Compiled in 19ms
+[01:11:05.023] Server  LOG     ✓ Compiled in 51ms
+[01:11:14.306] Server  LOG     ✓ Compiled in 49ms
+[01:11:31.048] Server  LOG     ✓ Compiled in 50ms
+[01:11:40.615] Server  LOG     ✓ Compiled in 18ms
+[01:11:50.489] Server  LOG     ✓ Compiled in 36ms
+[01:11:56.490] Server  LOG     ✓ Compiled in 48ms
+[01:12:39.122] Server  LOG     ✓ Compiled in 38ms
+[01:13:21.812] Server  LOG     ✓ Compiled in 34ms
+[01:13:35.707] Server  LOG     ✓ Compiled in 15ms
+[01:13:37.510] Server  LOG     ✓ Compiled in 22ms
+[01:13:48.172] Server  LOG     ✓ Compiled in 43ms
+[01:14:49.553] Server  LOG     ✓ Compiled in 26ms
+[01:15:00.689] Server  LOG     ✓ Compiled in 49ms

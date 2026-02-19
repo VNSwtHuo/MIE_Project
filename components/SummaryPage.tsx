@@ -1,15 +1,21 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { CheckCircle2, XCircle, Clock, TrendingUp, BarChart3, X } from 'lucide-react';
-
-interface Answer {
-  imageId: string;
-  userAnswer: boolean;
-  correctAnswer: boolean;
-  responseTime: number;
-  isCorrect: boolean;
-}
+import React, { useState } from "react";
+import {
+  CheckCircle2,
+  XCircle,
+  Clock,
+  TrendingUp,
+  BarChart3,
+  X,
+} from "lucide-react";
+import {
+  Answer,
+  calculateOverallStats,
+  calculateModeStats,
+  getModeName,
+  formatTimeSeconds,
+} from "@/lib/quizStatistics";
 
 interface ImageData {
   id: string;
@@ -25,52 +31,62 @@ interface SummaryPageProps {
   onRestart: () => void;
 }
 
-export function SummaryPage({ answers, images, consented, mode1First, onRestart }: SummaryPageProps) {
+export function SummaryPage({
+  answers,
+  images,
+  consented,
+  mode1First,
+  onRestart,
+}: SummaryPageProps) {
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
-  
-  const totalQuestions = answers.length;
-  const correctAnswers = answers.filter(a => a.isCorrect).length;
-  const accuracy = (correctAnswers / totalQuestions) * 100;
-  const averageResponseTime = answers.reduce((sum, a) => sum + a.responseTime, 0) / totalQuestions;
 
-  // Split answers by set
-  const firstSetAnswers = answers.slice(0, 10);
-  const secondSetAnswers = answers.slice(10, 20);
+  // Calculate overall statistics
+  const { totalQuestions, correctAnswers, accuracy } =
+    calculateOverallStats(answers);
 
-  const firstSetAccuracy = (firstSetAnswers.filter(a => a.isCorrect).length / firstSetAnswers.length) * 100;
-  const secondSetAccuracy = (secondSetAnswers.filter(a => a.isCorrect).length / secondSetAnswers.length) * 100;
+  // Calculate mode-based statistics
+  const {
+    mode1Accuracy,
+    mode2Accuracy,
+    mode1AvgTime,
+    mode2AvgTime,
+    mode1TotalTime,
+    mode2TotalTime,
+  } = calculateModeStats(answers, mode1First);
 
-  const firstSetMode = mode1First ? 'Mode 1 (Immediate Feedback)' : 'Mode 2 (Batch Feedback)';
-  const secondSetMode = mode1First ? 'Mode 2 (Batch Feedback)' : 'Mode 1 (Immediate Feedback)';
-
-  // Calculate average time by mode
-  const mode1Answers = mode1First ? firstSetAnswers : secondSetAnswers;
-  const mode2Answers = mode1First ? secondSetAnswers : firstSetAnswers;
-  const mode1AvgTime = mode1Answers.reduce((sum, a) => sum + a.responseTime, 0) / mode1Answers.length;
-  const mode2AvgTime = mode2Answers.reduce((sum, a) => sum + a.responseTime, 0) / mode2Answers.length;
+  // Get mode names for display
+  const firstSetMode = getModeName(mode1First, 1);
+  const secondSetMode = getModeName(mode1First, 2);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-12 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
           <h1 className="text-3xl mb-2 text-gray-900">Study Complete!</h1>
-          <p className="text-gray-600 mb-6">Thank you for participating in our research.</p>
+          <p className="text-gray-600 mb-6">
+            Thank you for participating in our research.
+          </p>
 
           {/* Data Collection Notice */}
-          <div className={`mb-8 p-4 rounded-lg border-2 ${
-            consented 
-              ? 'bg-green-50 border-green-300' 
-              : 'bg-gray-50 border-gray-300'
-          }`}>
+          <div
+            className={`mb-8 p-4 rounded-lg border-2 ${
+              consented
+                ? "bg-green-50 border-green-300"
+                : "bg-gray-50 border-gray-300"
+            }`}
+          >
             {consented ? (
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-base text-gray-900 mb-1">Data Collection Consent Granted</h3>
+                  <h3 className="text-base text-gray-900 mb-1">
+                    Data Collection Consent Granted
+                  </h3>
                   <p className="text-sm text-gray-700">
-                    Your anonymous performance data has been recorded for research purposes. 
-                    This data will not be associated with any individual and will only be used 
-                    to understand patterns in AI image detection.
+                    Your anonymous performance data has been recorded for
+                    research purposes. This data will not be associated with any
+                    individual and will only be used to understand patterns in
+                    AI image detection.
                   </p>
                 </div>
               </div>
@@ -78,9 +94,12 @@ export function SummaryPage({ answers, images, consented, mode1First, onRestart 
               <div className="flex items-start gap-3">
                 <XCircle className="w-6 h-6 text-gray-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-base text-gray-900 mb-1">No Data Collection</h3>
+                  <h3 className="text-base text-gray-900 mb-1">
+                    No Data Collection
+                  </h3>
                   <p className="text-sm text-gray-700">
-                    As per your choice, no data from this session has been collected or stored.
+                    As per your choice, no data from this session has been
+                    collected or stored.
                   </p>
                 </div>
               </div>
@@ -107,21 +126,20 @@ export function SummaryPage({ answers, images, consented, mode1First, onRestart 
 
               <div className="bg-purple-50 rounded-lg p-6 text-center">
                 <div className="text-3xl text-purple-600 mb-2">
-                  {(averageResponseTime / 1000).toFixed(1)}s
+                  {formatTimeSeconds(mode1TotalTime + mode2TotalTime)}s
                 </div>
-                <div className="text-sm text-gray-600">Avg Response Time</div>
-                <div className="text-xs text-gray-500 mt-1">
-                  per image
-                </div>
+                <div className="text-sm text-gray-600">Total Time</div>
               </div>
 
               <div className="bg-teal-50 rounded-lg p-6 text-center">
                 <div className="text-3xl text-teal-600 mb-2">
-                  {mode1First ? '1→2' : '2→1'}
+                  {mode1First ? "1→2" : "2→1"}
                 </div>
                 <div className="text-sm text-gray-600">Mode Order</div>
                 <div className="text-xs text-gray-500 mt-1">
-                  {mode1First ? 'Immediate then Batch' : 'Batch then Immediate'}
+                  {mode1First
+                    ? "With then No feedback"
+                    : "No then With feedback"}
                 </div>
               </div>
             </div>
@@ -138,27 +156,27 @@ export function SummaryPage({ answers, images, consented, mode1First, onRestart 
               <div className="bg-blue-50 rounded-lg p-5 border border-blue-200">
                 <h3 className="text-lg text-gray-900 mb-3">Images 1-10</h3>
                 <div className="text-xl text-indigo-600 mb-1">
-                  {Math.round(firstSetAccuracy)}% accuracy
+                  {Math.round(mode1First ? mode1Accuracy : mode2Accuracy)}%
+                  accuracy
                 </div>
                 <div className="text-xl text-purple-600 mb-1">
-                  {((mode1First ? mode1AvgTime : mode2AvgTime) / 1000).toFixed(1)}s Avg Response Time
+                  {formatTimeSeconds(mode1First ? mode1AvgTime : mode2AvgTime)}s
+                  Avg Response Time
                 </div>
-                <div className="text-xl text-teal-600">
-                  {firstSetMode}
-                </div>
+                <div className="text-xl text-teal-600">{firstSetMode}</div>
               </div>
 
               <div className="bg-pink-50 rounded-lg p-5 border border-pink-200">
                 <h3 className="text-lg text-gray-900 mb-3">Images 11-20</h3>
                 <div className="text-xl text-indigo-600 mb-1">
-                  {Math.round(secondSetAccuracy)}% accuracy
+                  {Math.round(mode1First ? mode2Accuracy : mode1Accuracy)}%
+                  accuracy
                 </div>
                 <div className="text-xl text-purple-600 mb-1">
-                  {((mode1First ? mode2AvgTime : mode1AvgTime) / 1000).toFixed(1)}s Avg Response Time
+                  {formatTimeSeconds(mode1First ? mode2AvgTime : mode1AvgTime)}s
+                  Avg Response Time
                 </div>
-                <div className="text-xl text-teal-600">
-                  {secondSetMode}
-                </div>
+                <div className="text-xl text-teal-600">{secondSetMode}</div>
               </div>
             </div>
           </div>
@@ -166,18 +184,22 @@ export function SummaryPage({ answers, images, consented, mode1First, onRestart 
           {/* Detailed Results */}
           <div className="mb-6">
             <h2 className="text-xl mb-2 text-gray-900">Detailed Results</h2>
-            <p className="text-sm text-gray-600 mb-4">Click on any image to enlarge</p>
-            
+            <p className="text-sm text-gray-600 mb-4">
+              Click on any image to enlarge
+            </p>
+
             <div className="space-y-2 max-h-96 overflow-y-auto">
               {answers.map((answer, index) => {
-                const imageData = images.find(img => img.id === answer.imageId);
+                const imageData = images.find(
+                  (img) => img.id === answer.imageId,
+                );
                 return (
                   <div
                     key={answer.imageId}
                     className={`flex items-center gap-3 p-3 rounded-lg ${
                       answer.isCorrect
-                        ? 'bg-green-50 border border-green-200'
-                        : 'bg-red-50 border border-red-200'
+                        ? "bg-green-50 border border-green-200"
+                        : "bg-red-50 border border-red-200"
                     }`}
                   >
                     {/* Image Thumbnail - Clickable */}
@@ -189,7 +211,7 @@ export function SummaryPage({ answers, images, consented, mode1First, onRestart 
                         onClick={() => setEnlargedImage(imageData.url)}
                       />
                     )}
-                    
+
                     <div className="flex-1 flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         {answer.isCorrect ? (
@@ -202,14 +224,16 @@ export function SummaryPage({ answers, images, consented, mode1First, onRestart 
                             Image #{index + 1}
                           </p>
                           <p className="text-xs text-gray-600">
-                            {answer.correctAnswer ? 'AI-Generated' : 'Real Photo'}
+                            {answer.correctAnswer
+                              ? "AI-Generated"
+                              : "Real Photo"}
                           </p>
                         </div>
                       </div>
                       <div className="text-right">
                         <div className="flex items-center gap-2 text-xs text-gray-600">
                           <Clock className="w-3 h-3" />
-                          {(answer.responseTime / 1000).toFixed(1)}s
+                          {formatTimeSeconds(answer.responseTime)}s
                         </div>
                       </div>
                     </div>
@@ -234,11 +258,11 @@ export function SummaryPage({ answers, images, consented, mode1First, onRestart 
 
       {/* Enlarged Image Modal */}
       {enlargedImage && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50"
           onClick={() => setEnlargedImage(null)}
         >
-          <div 
+          <div
             className="relative bg-white rounded-lg p-4 max-w-5xl max-h-[90vh] overflow-auto"
             onClick={(e) => e.stopPropagation()}
           >

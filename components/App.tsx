@@ -1,75 +1,81 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { StartPage } from './StartPage';
-import { InstructionPage } from './InstructionPage';
-import { ImageEvaluationPage } from './ImageEvaluationPage';
-import { SummaryPage } from './SummaryPage';
-import { getRandomImages, ImageData } from '@/lib/imageDataset';
+import { useState, useEffect } from "react";
+import { StartPage } from "./StartPage";
+import { InstructionPage } from "./InstructionPage";
+import { ImageEvaluationPage } from "./ImageEvaluationPage";
+import { SummaryPage } from "./SummaryPage";
+import { getRandomImages, ImageData } from "@/lib/imageDataset";
+import { auth } from "@/lib/firebase";
+import { signInAnonymously } from "firebase/auth";
+import { saveQuizDataToFirebase } from "@/lib/quizSave";
+import { Answer } from "@/lib/quizStatistics";
 
-type Phase = 'start' | 'instruction' | 'evaluation' | 'summary';
-
-interface Answer {
-  imageId: string;
-  userAnswer: boolean;
-  correctAnswer: boolean;
-  responseTime: number;
-  isCorrect: boolean;
-}
+type Phase = "start" | "instruction" | "evaluation" | "summary";
 
 export default function App() {
-  const [phase, setPhase] = useState<Phase>('start');
+  const [phase, setPhase] = useState<Phase>("start");
   const [consented, setConsented] = useState<boolean>(false);
   const [selectedImages, setSelectedImages] = useState<ImageData[]>([]);
   const [mode1First, setMode1First] = useState<boolean>(false);
   const [answers, setAnswers] = useState<Answer[]>([]);
+  const [userId, setUserId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const init = async () => {
+      await signInAnonymously(auth);
+      if (auth.currentUser) {
+        setUserId(auth.currentUser.uid);
+      }
+    };
+    init();
+  }, []);
 
   const handleStart = (consentGiven: boolean) => {
     setConsented(consentGiven);
-    setPhase('instruction');
+    setPhase("instruction");
   };
 
   const handleBeginQuiz = () => {
     // Select 20 random images
     const images = getRandomImages(20);
     setSelectedImages(images);
-    
+
     // Randomly determine mode order
     const randomMode = Math.random() < 0.5;
     setMode1First(randomMode);
-    
+
     // Move to evaluation phase
-    setPhase('evaluation');
+    setPhase("evaluation");
   };
 
-  const handleEvaluationComplete = (completedAnswers: Answer[]) => {
+  const handleEvaluationComplete = async (completedAnswers: Answer[]) => {
     setAnswers(completedAnswers);
-    
-    // Simulate saving data to backend if user consented
-    if (consented) {
-      const totalQuestions = completedAnswers.length;
-      const correctAnswers = completedAnswers.filter(a => a.isCorrect).length;
-      const accuracy = (correctAnswers / totalQuestions) * 100;
-      const averageResponseTime = completedAnswers.reduce((sum, a) => sum + a.responseTime, 0) / totalQuestions;
-      
-      const dataToSave = {
-        accuracy: accuracy.toFixed(2),
-        averageResponseTime: (averageResponseTime / 1000).toFixed(2),
-        mode1First,
-        timestamp: new Date().toISOString(),
-        totalQuestions,
-        correctAnswers
-      };
-      
-      console.log('Data that would be saved to backend:', dataToSave);
-      // In a real implementation with backend, you would send this data to your server/database
+
+    // Save data to Firebase if user consented
+    if (consented && userId) {
+      try {
+        const detailedAnswers = completedAnswers.map((a) => ({
+          imageId: a.imageId,
+          userAnswer: a.userAnswer ? "Fake" : "Real",
+          correctAnswer: a.correctAnswer ? "Fake" : "Real",
+          isCorrect: a.isCorrect ? 1 : 0,
+          responseTime: a.responseTime / 1000, // convert to seconds
+          mode: a.mode, // true = with feedback, false = without feedback
+        }));
+
+        await saveQuizDataToFirebase(userId, detailedAnswers, !mode1First);
+        console.log("Quiz data successfully saved to Firebase");
+      } catch (error) {
+        console.error("Failed to save quiz data:", error);
+      }
     }
-    
-    setPhase('summary');
+
+    setPhase("summary");
   };
 
   const handleRestart = () => {
-    setPhase('start');
+    setPhase("start");
     setConsented(false);
     setSelectedImages([]);
     setMode1First(false);
@@ -78,23 +84,19 @@ export default function App() {
 
   return (
     <>
-      {phase === 'start' && (
-        <StartPage onStart={handleStart} />
-      )}
-      
-      {phase === 'instruction' && (
-        <InstructionPage onBegin={handleBeginQuiz} />
-      )}
-      
-      {phase === 'evaluation' && (
+      {phase === "start" && <StartPage onStart={handleStart} />}
+
+      {phase === "instruction" && <InstructionPage onBegin={handleBeginQuiz} />}
+
+      {phase === "evaluation" && (
         <ImageEvaluationPage
           images={selectedImages}
           mode1First={mode1First}
           onComplete={handleEvaluationComplete}
         />
       )}
-      
-      {phase === 'summary' && (
+
+      {phase === "summary" && (
         <SummaryPage
           answers={answers}
           images={selectedImages}

@@ -700,7 +700,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_p
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Timer$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/timer.js [app-client] (ecmascript) <export default as Timer>");
 ;
 var _s = __turbopack_context__.k.signature();
-'use client';
+"use client";
 ;
 ;
 function ImageEvaluationPage({ images, mode1First, onComplete }) {
@@ -826,7 +826,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                 children: "Feedback for Last 5 Images"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 136,
+                                lineNumber: 140,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -834,13 +834,13 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                 children: "Click on any image to enlarge"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 137,
+                                lineNumber: 143,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-4 mb-6",
                                 children: pendingAnswers.map((answer, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: `flex gap-4 p-4 rounded-lg border-2 ${answer.isCorrect ? 'bg-green-50 border-green-300' : 'bg-red-50 border-red-300'}`,
+                                        className: `flex gap-4 p-4 rounded-lg border-2 ${answer.isCorrect ? "bg-green-50 border-green-300" : "bg-red-50 border-red-300"}`,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: answer.imageUrl,
@@ -849,7 +849,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                                 onClick: ()=>setEnlargedImage(answer.imageUrl)
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 158,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -861,13 +861,13 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                                             className: "w-6 h-6 text-green-600"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                            lineNumber: 161,
+                                                            lineNumber: 169,
                                                             columnNumber: 25
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
                                                             className: "w-6 h-6 text-red-600"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                            lineNumber: 163,
+                                                            lineNumber: 171,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -880,43 +880,43 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                                    lineNumber: 166,
+                                                                    lineNumber: 174,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                     className: "text-sm text-gray-600",
-                                                                    children: answer.correctAnswer ? 'AI-Generated' : 'Real Photo'
+                                                                    children: answer.correctAnswer ? "AI-Generated" : "Real Photo"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                                    lineNumber: 169,
+                                                                    lineNumber: 178,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                            lineNumber: 165,
+                                                            lineNumber: 173,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 167,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                lineNumber: 158,
+                                                lineNumber: 166,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, answer.imageId, true, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 149,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 139,
+                                lineNumber: 147,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -925,18 +925,18 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                 children: "Continue"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 179,
+                                lineNumber: 188,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                        lineNumber: 135,
+                        lineNumber: 139,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                    lineNumber: 134,
+                    lineNumber: 138,
                     columnNumber: 9
                 }, this),
                 enlargedImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -953,12 +953,12 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                     className: "w-6 h-6 text-gray-700"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                    lineNumber: 202,
+                                    lineNumber: 211,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 198,
+                                lineNumber: 207,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -967,18 +967,18 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                 className: "w-full h-auto rounded-lg"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 204,
+                                lineNumber: 213,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                        lineNumber: 194,
+                        lineNumber: 203,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                    lineNumber: 190,
+                    lineNumber: 199,
                     columnNumber: 11
                 }, this)
             ]
@@ -1001,7 +1001,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                         children: "Image Evaluation"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 221,
+                                        lineNumber: 230,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1014,7 +1014,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                        lineNumber: 224,
+                                                        lineNumber: 233,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1025,13 +1025,13 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                        lineNumber: 225,
+                                                        lineNumber: 234,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                lineNumber: 223,
+                                                lineNumber: 232,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1041,7 +1041,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                        lineNumber: 228,
+                                                        lineNumber: 237,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1049,29 +1049,29 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                                         children: [
                                                             Math.floor(elapsedTime / 60),
                                                             ":",
-                                                            String(elapsedTime % 60).padStart(2, '0')
+                                                            String(elapsedTime % 60).padStart(2, "0")
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                        lineNumber: 229,
+                                                        lineNumber: 238,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                lineNumber: 227,
+                                                lineNumber: 236,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 222,
+                                        lineNumber: 231,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 220,
+                                lineNumber: 229,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1086,12 +1086,12 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                            lineNumber: 236,
+                                            lineNumber: 248,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 235,
+                                        lineNumber: 247,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1103,31 +1103,32 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 241,
+                                        lineNumber: 255,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 234,
+                                lineNumber: 246,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-sm text-gray-600",
                                 children: [
-                                    currentIndex < 10 ? 'First set' : 'Second set',
-                                    " • ",
-                                    currentMode === 1 ? 'Immediate feedback' : 'Batch feedback'
+                                    currentIndex < 10 ? "First set" : "Second set",
+                                    " •",
+                                    " ",
+                                    currentMode === 1 ? "Immediate feedback" : "Batch feedback"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 246,
+                                lineNumber: 260,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                        lineNumber: 219,
+                        lineNumber: 228,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1138,12 +1139,12 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                             className: "w-full max-h-[60vh] object-contain rounded-lg shadow-md"
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                            lineNumber: 252,
+                            lineNumber: 267,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                        lineNumber: 251,
+                        lineNumber: 266,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1154,7 +1155,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                 children: "Is this image AI-generated or a real photograph?"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 260,
+                                lineNumber: 275,
                                 columnNumber: 11
                             }, this),
                             !inlineFeedback ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1166,7 +1167,7 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                         children: "Real Photo"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 267,
+                                        lineNumber: 282,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1175,16 +1176,16 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                         children: "AI-Generated"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 274,
+                                        lineNumber: 289,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 265,
+                                lineNumber: 280,
                                 columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `p-6 rounded-lg border-2 ${inlineFeedback.isCorrect ? 'bg-green-50 border-green-300' : 'bg-red-50 border-red-300'}`,
+                                className: `p-6 rounded-lg border-2 ${inlineFeedback.isCorrect ? "bg-green-50 border-green-300" : "bg-red-50 border-red-300"}`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex flex-col md:flex-row md:items-center md:justify-between gap-4",
                                     children: [
@@ -1195,78 +1196,79 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                                     className: "w-8 h-8 text-green-600 flex-shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                    lineNumber: 290,
+                                                    lineNumber: 307,
                                                     columnNumber: 21
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
                                                     className: "w-8 h-8 text-red-600 flex-shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                    lineNumber: 292,
+                                                    lineNumber: 309,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: `text-lg ${inlineFeedback.isCorrect ? 'text-green-900' : 'text-red-900'}`,
-                                                            children: inlineFeedback.isCorrect ? 'Correct!' : 'Incorrect'
+                                                            className: `text-lg ${inlineFeedback.isCorrect ? "text-green-900" : "text-red-900"}`,
+                                                            children: inlineFeedback.isCorrect ? "Correct!" : "Incorrect"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                            lineNumber: 295,
+                                                            lineNumber: 312,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-sm text-gray-700",
                                                             children: [
-                                                                "This image is ",
-                                                                inlineFeedback.correctAnswer ? 'AI-Generated' : 'a Real Photo'
+                                                                "This image is",
+                                                                " ",
+                                                                inlineFeedback.correctAnswer ? "AI-Generated" : "a Real Photo"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                            lineNumber: 298,
+                                                            lineNumber: 317,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                    lineNumber: 294,
+                                                    lineNumber: 311,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                            lineNumber: 288,
+                                            lineNumber: 305,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: moveToNext,
                                             className: "bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg transition-colors whitespace-nowrap md:w-auto w-full",
-                                            children: currentIndex < totalImages - 1 ? 'Next' : 'View Results'
+                                            children: currentIndex < totalImages - 1 ? "Next" : "View Results"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                            lineNumber: 303,
+                                            lineNumber: 325,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                    lineNumber: 287,
+                                    lineNumber: 304,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 282,
+                                lineNumber: 297,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                        lineNumber: 259,
+                        lineNumber: 274,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                lineNumber: 218,
+                lineNumber: 227,
                 columnNumber: 7
             }, this),
             enlargedImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1283,12 +1285,12 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                                 className: "w-6 h-6 text-gray-700"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 329,
+                                lineNumber: 351,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                            lineNumber: 325,
+                            lineNumber: 347,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1297,24 +1299,24 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
                             className: "w-full h-auto rounded-lg"
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                            lineNumber: 331,
+                            lineNumber: 353,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                    lineNumber: 321,
+                    lineNumber: 343,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                lineNumber: 317,
+                lineNumber: 339,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-        lineNumber: 217,
+        lineNumber: 226,
         columnNumber: 5
     }, this);
 }
@@ -2101,124 +2103,11 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/Documents/GitHub/mie_project/components/App.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
+"[project]/Documents/GitHub/mie_project/components/App.tsx [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-__turbopack_context__.s([
-    "default",
-    ()=>App
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$StartPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/components/StartPage.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$InstructionPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$ImageEvaluationPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$SummaryPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$imageDataset$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/lib/imageDataset.ts [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-'use client';
-;
-;
-;
-;
-;
-;
-function App() {
-    _s();
-    const [phase, setPhase] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('start');
-    const [consented, setConsented] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [selectedImages, setSelectedImages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const [mode1First, setMode1First] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [answers, setAnswers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const handleStart = (consentGiven)=>{
-        setConsented(consentGiven);
-        setPhase('instruction');
-    };
-    const handleBeginQuiz = ()=>{
-        // Select 20 random images
-        const images = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$imageDataset$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getRandomImages"])(20);
-        setSelectedImages(images);
-        // Randomly determine mode order
-        const randomMode = Math.random() < 0.5;
-        setMode1First(randomMode);
-        // Move to evaluation phase
-        setPhase('evaluation');
-    };
-    const handleEvaluationComplete = (completedAnswers)=>{
-        setAnswers(completedAnswers);
-        // Simulate saving data to backend if user consented
-        if (consented) {
-            const totalQuestions = completedAnswers.length;
-            const correctAnswers = completedAnswers.filter((a)=>a.isCorrect).length;
-            const accuracy = correctAnswers / totalQuestions * 100;
-            const averageResponseTime = completedAnswers.reduce((sum, a)=>sum + a.responseTime, 0) / totalQuestions;
-            const dataToSave = {
-                accuracy: accuracy.toFixed(2),
-                averageResponseTime: (averageResponseTime / 1000).toFixed(2),
-                mode1First,
-                timestamp: new Date().toISOString(),
-                totalQuestions,
-                correctAnswers
-            };
-            console.log('Data that would be saved to backend:', dataToSave);
-        // In a real implementation with backend, you would send this data to your server/database
-        }
-        setPhase('summary');
-    };
-    const handleRestart = ()=>{
-        setPhase('start');
-        setConsented(false);
-        setSelectedImages([]);
-        setMode1First(false);
-        setAnswers([]);
-    };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-        children: [
-            phase === 'start' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$StartPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StartPage"], {
-                onStart: handleStart
-            }, void 0, false, {
-                fileName: "[project]/Documents/GitHub/mie_project/components/App.tsx",
-                lineNumber: 82,
-                columnNumber: 9
-            }, this),
-            phase === 'instruction' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$InstructionPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InstructionPage"], {
-                onBegin: handleBeginQuiz
-            }, void 0, false, {
-                fileName: "[project]/Documents/GitHub/mie_project/components/App.tsx",
-                lineNumber: 86,
-                columnNumber: 9
-            }, this),
-            phase === 'evaluation' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$ImageEvaluationPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ImageEvaluationPage"], {
-                images: selectedImages,
-                mode1First: mode1First,
-                onComplete: handleEvaluationComplete
-            }, void 0, false, {
-                fileName: "[project]/Documents/GitHub/mie_project/components/App.tsx",
-                lineNumber: 90,
-                columnNumber: 9
-            }, this),
-            phase === 'summary' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$SummaryPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SummaryPage"], {
-                answers: answers,
-                images: selectedImages,
-                consented: consented,
-                mode1First: mode1First,
-                onRestart: handleRestart
-            }, void 0, false, {
-                fileName: "[project]/Documents/GitHub/mie_project/components/App.tsx",
-                lineNumber: 98,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
-}
-_s(App, "0ims0wufs0Ssn4jCk6S4NW+7HuQ=");
-_c = App;
-var _c;
-__turbopack_context__.k.register(_c, "App");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
+const e = new Error("Could not parse module '[project]/Documents/GitHub/mie_project/components/App.tsx'\n\n'const' declarations must be initialized");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
 }),
 ]);
 
