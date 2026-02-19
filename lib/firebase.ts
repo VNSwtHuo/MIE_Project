@@ -1,8 +1,8 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps, type FirebaseApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore";
-import {getAuth, signInAnonymously} from "firebase/auth";
+import { getFirestore, type Firestore } from "firebase/firestore";
+import { getAuth, type Auth } from "firebase/auth";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -19,13 +19,25 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
-// Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+// Initialize Firebase only on client side
+let app: FirebaseApp | undefined;
+let db: Firestore | undefined;
+let auth: Auth | undefined;
 
-// Initialize analytics only on client side
 if (typeof window !== 'undefined') {
+  // Check if Firebase app is already initialized
+  if (!getApps().length) {
+    app = initializeApp(firebaseConfig);
+  } else {
+    app = getApps()[0];
+  }
+  
+  // Initialize analytics
   getAnalytics(app);
+  
+  // Initialize services
+  db = getFirestore(app);
+  auth = getAuth(app);
 }
 
-export const db = getFirestore(app);
-export const auth = getAuth(app);
+export { app, db, auth };

@@ -23,6 +23,7 @@ export default function App() {
 
   useEffect(() => {
     const init = async () => {
+      if (!auth) return;
       await signInAnonymously(auth);
       if (auth.currentUser) {
         setUserId(auth.currentUser.uid);

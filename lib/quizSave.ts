@@ -33,6 +33,10 @@ export const saveQuizDataToFirebase = async (
     answers: DetailedAnswer[], 
     noFeedbackFirst: boolean) => {
         try {
+            if (!db) {
+                throw new Error("Firebase not initialized");
+            }
+            
             const Accuracy = answers.filter((a) => a.isCorrect).length / 20;
             const WFAccuracy = answers.filter((a) => a.mode && a.isCorrect).length / 10;
             const WOFAccuracy = answers.filter((a) => !a.mode && a.isCorrect).length / 10;
