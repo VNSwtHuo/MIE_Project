@@ -32,7 +32,7 @@ export interface ModeStatistics {
 }
 
 export function calculateOverallStats(answers: Answer[]): QuizStatistics {
-  const totalQuestions = answers.length;
+  const totalQuestions = 20;
   const correctAnswers = answers.filter((a) => a.isCorrect).length;
   const accuracy = (correctAnswers / totalQuestions) * 100;
   const averageResponseTime =
@@ -86,14 +86,14 @@ export function calculateModeStats(
     0
   );
 
-  const mode1AvgTime = mode1TotalTime / mode1Answers.length;
-  const mode2AvgTime = mode2TotalTime / mode2Answers.length;
+  const mode1AvgTime = mode1TotalTime / 10;
+  const mode2AvgTime = mode2TotalTime / 10;
 
   return {
     mode1Answers,
     mode2Answers,
-    mode1Accuracy: (mode1Correct / mode1Answers.length) * 100,
-    mode2Accuracy: (mode2Correct / mode2Answers.length) * 100,
+    mode1Accuracy: (mode1Correct / 10) * 100,
+    mode2Accuracy: (mode2Correct / 10) * 100,
     mode1AvgTime,
     mode2AvgTime,
     mode1TotalTime,
