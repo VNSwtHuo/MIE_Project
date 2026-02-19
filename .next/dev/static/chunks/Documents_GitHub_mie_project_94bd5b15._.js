@@ -10,7 +10,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_p
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/shield.js [app-client] (ecmascript) <export default as Shield>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/target.js [app-client] (ecmascript) <export default as Target>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/image.js [app-client] (ecmascript) <export default as Image>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -18,19 +18,18 @@ var _s = __turbopack_context__.k.signature();
 ;
 function StartPage({ onStart }) {
     _s();
-    const [agreed, setAgreed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [showDialog, setShowDialog] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [agreed, setAgreed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const handleNext = ()=>{
         if (!agreed) {
-            setShowDialog(true);
+            onStart(false);
         } else {
             onStart(true);
         }
     };
-    const handleDialogResponse = (consent)=>{
-        setShowDialog(false);
-        onStart(consent);
-    };
+    // const handleDialogResponse = (consent: boolean) => {
+    //   setShowDialog(false);
+    //   onStart(consent);
+    // };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-[#F7E6C4]/30 flex items-center justify-center p-4",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -43,12 +42,12 @@ function StartPage({ onStart }) {
                         children: "AI-generated Images and Real Images Recognition"
                     }, void 0, false, {
                         fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                        lineNumber: 32,
+                        lineNumber: 31,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                    lineNumber: 31,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -63,7 +62,7 @@ function StartPage({ onStart }) {
                                     children: "20 images"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 40,
                                     columnNumber: 13
                                 }, this),
                                 " are AI-generated or real.",
@@ -72,7 +71,7 @@ function StartPage({ onStart }) {
                                     children: "You may receive the correct answer immediately after each image, or receive no feedback until the end."
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, this),
                                 " ",
@@ -80,20 +79,20 @@ function StartPage({ onStart }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                            lineNumber: 39,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid grid-cols-1 md:grid-cols-3 gap-4 my-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-[#76453B]/30 rounded-lg p-4 text-center",
+                                    className: "bg-[#9E3B3B]/30 rounded-lg p-4 text-center",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"], {
-                                            className: "w-8 h-8 text-[#76453B] mx-auto mb-2"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__["Image"], {
+                                            className: "w-8 h-8 text-[#9E3B3B] mx-auto mb-2"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                            lineNumber: 53,
+                                            lineNumber: 52,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -102,12 +101,12 @@ function StartPage({ onStart }) {
                                                 children: "20 Images"
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                                lineNumber: 55,
+                                                lineNumber: 54,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 53,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -115,13 +114,13 @@ function StartPage({ onStart }) {
                                             children: "Quick test"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 56,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 51,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -131,7 +130,7 @@ function StartPage({ onStart }) {
                                             className: "w-8 h-8 text-[#F1C376] mx-auto mb-2"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 59,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -140,12 +139,12 @@ function StartPage({ onStart }) {
                                                 children: "2 Feedback Modes"
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                                lineNumber: 62,
+                                                lineNumber: 61,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 60,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -153,13 +152,13 @@ function StartPage({ onStart }) {
                                             children: "With or without"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 63,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 58,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -169,7 +168,7 @@ function StartPage({ onStart }) {
                                             className: "w-8 h-8 text-[#606C5D] mx-auto mb-2"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 66,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -178,12 +177,12 @@ function StartPage({ onStart }) {
                                                 children: "Anonymous"
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                                lineNumber: 69,
+                                                lineNumber: 68,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -191,19 +190,19 @@ function StartPage({ onStart }) {
                                             children: "Data Collection"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 70,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 65,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                            lineNumber: 51,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -216,33 +215,44 @@ function StartPage({ onStart }) {
                                         children: "only if you consent"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 78,
                                         columnNumber: 23
                                     }, this),
                                     ". Your data will never be associated with personal information, shared, or used for any purpose other than for this MIE286 project data analysis.",
                                     " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "Even if you do not agree to data collection, you can still experience this fun quiz!"
+                                        children: "Even if you do not agree to data collection, you can still take this fun quiz!"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 81,
                                         columnNumber: 15
-                                    }, this)
+                                    }, this),
+                                    " ",
+                                    "However, whether you choose to have your data collected or not,",
+                                    " ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                        children: "please don't take another quiz attempt"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
+                                        lineNumber: 86,
+                                        columnNumber: 15
+                                    }, this),
+                                    " to ensure data integrity and accuracy."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                lineNumber: 77,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                            lineNumber: 76,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                    lineNumber: 38,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -257,7 +267,7 @@ function StartPage({ onStart }) {
                                 className: "mt-1 w-5 h-5 text-[#76453B] border-gray-300 rounded focus:ring-2 focus:ring-[#76453B] cursor-pointer"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                lineNumber: 93,
+                                lineNumber: 95,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -269,25 +279,25 @@ function StartPage({ onStart }) {
                                         children: "MIE286 course project"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this),
                                     "."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                lineNumber: 99,
+                                lineNumber: 101,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                        lineNumber: 92,
+                        lineNumber: 94,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                    lineNumber: 91,
+                    lineNumber: 93,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -296,81 +306,22 @@ function StartPage({ onStart }) {
                     children: "Next"
                 }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                    lineNumber: 107,
+                    lineNumber: 109,
                     columnNumber: 9
-                }, this),
-                showDialog && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white rounded-xl shadow-2xl p-6 max-w-md w-full",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-xl mb-4 text-gray-900",
-                                children: "Data Collection Consent"
-                            }, void 0, false, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                lineNumber: 118,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-gray-700 mb-6",
-                                children: "You have not agreed to data collection. Would you like to agree to have your data collected for research purposes? Your data will remain completely anonymous."
-                            }, void 0, false, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                lineNumber: 121,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-2 gap-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>handleDialogResponse(true),
-                                        className: "bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-4 rounded-lg transition-colors",
-                                        children: "Yes, I agree"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                        lineNumber: 127,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>handleDialogResponse(false),
-                                        className: "bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-4 rounded-lg transition-colors",
-                                        children: "No, continue without"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                        lineNumber: 133,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                                lineNumber: 126,
-                                columnNumber: 15
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                        lineNumber: 117,
-                        columnNumber: 13
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-                    lineNumber: 116,
-                    columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-            lineNumber: 29,
+            lineNumber: 28,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Documents/GitHub/mie_project/components/StartPage.tsx",
-        lineNumber: 28,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 }
-_s(StartPage, "MylfFlynm6kkjEHzSFgKtKWOjec=");
+_s(StartPage, "ts855B6MkiCn6jqI+l5nts/LMbw=");
 _c = StartPage;
 var _c;
 __turbopack_context__.k.register(_c, "StartPage");
@@ -386,48 +337,38 @@ __turbopack_context__.s([
     ()=>InstructionPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/circle-alert.js [app-client] (ecmascript) <export default as AlertCircle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/camera.js [app-client] (ecmascript) <export default as Camera>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
-'use client';
+"use client";
 ;
 ;
 function InstructionPage({ onBegin }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 flex items-center justify-center p-4",
+        className: "min-h-screen bg-[#F7E6C4]/30 flex items-center justify-center p-4",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "bg-white rounded-2xl shadow-2xl p-8 md:p-12 max-w-3xl w-full",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center gap-3 mb-6",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__["AlertCircle"], {
-                            className: "w-10 h-10 text-indigo-600"
-                        }, void 0, false, {
-                            fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                            lineNumber: 16,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-3xl text-gray-900",
-                            children: "Before We Begin"
-                        }, void 0, false, {
-                            fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                            lineNumber: 17,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "text-3xl text-gray-900",
+                        children: "Assumptions & Clarification"
+                    }, void 0, false, {
+                        fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                    lineNumber: 15,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "space-y-6 mb-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-indigo-50 border-l-4 border-indigo-500 rounded-r-lg p-6",
+                            className: "bg-[#9E3B3B]/10 rounded-lg p-6",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-4",
                                 children: [
@@ -435,10 +376,10 @@ function InstructionPage({ onBegin }) {
                                         className: "flex items-start gap-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__["Camera"], {
-                                                className: "w-6 h-6 text-indigo-600 flex-shrink-0 mt-1"
+                                                className: "w-6 h-6 text-[#9E3B3B] flex-shrink-0 mt-1"
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                lineNumber: 26,
+                                                lineNumber: 25,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -446,15 +387,15 @@ function InstructionPage({ onBegin }) {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "text-base text-gray-900 mb-2",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                            children: '1. What counts as a "Real Photo"?'
+                                                            children: '1. What we count as a "Real Photo"?'
                                                         }, void 0, false, {
                                                             fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                            lineNumber: 29,
+                                                            lineNumber: 28,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                        lineNumber: 28,
+                                                        lineNumber: 27,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -466,7 +407,7 @@ function InstructionPage({ onBegin }) {
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
                                                                 lineNumber: 33,
-                                                                columnNumber: 84
+                                                                columnNumber: 33
                                                             }, this),
                                                             " be applied. However, to reduce the difficulty, there are ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
@@ -474,42 +415,42 @@ function InstructionPage({ onBegin }) {
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
                                                                 lineNumber: 34,
-                                                                columnNumber: 66
+                                                                columnNumber: 54
                                                             }, this),
-                                                            " photos that post-processing with image synthesis technology, such as image stacks and focus stacking."
+                                                            " photos that have undergone post-processing with image synthesis technology."
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                        lineNumber: 31,
+                                                        lineNumber: 30,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                lineNumber: 27,
+                                                lineNumber: 26,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                        lineNumber: 25,
+                                        lineNumber: 24,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "border-t border-indigo-200"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                        lineNumber: 40,
+                                        lineNumber: 42,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-start gap-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                                className: "w-6 h-6 text-indigo-600 flex-shrink-0 mt-1"
+                                                className: "w-6 h-6 text-[#9E3B3B] flex-shrink-0 mt-1"
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                lineNumber: 44,
+                                                lineNumber: 46,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -517,124 +458,126 @@ function InstructionPage({ onBegin }) {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "text-base text-gray-900 mb-2",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                            children: '2. What counts as "AI-Generated Images?"'
+                                                            children: '2. What we count as "AI-Generated Images?"'
                                                         }, void 0, false, {
                                                             fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                            lineNumber: 47,
+                                                            lineNumber: 49,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                        lineNumber: 46,
+                                                        lineNumber: 48,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-sm text-gray-700 leading-relaxed",
                                                         children: [
-                                                            "AI-generated images refer to the pictures that were entirely generated by AI. To reduce the difficulty, there are ",
+                                                            "AI-generated images refer to the pictures that were entirely generated by AI. To reduce the difficulty, there are",
+                                                            " ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                                                 children: "NO"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                                lineNumber: 51,
-                                                                columnNumber: 57
+                                                                lineNumber: 54,
+                                                                columnNumber: 21
                                                             }, this),
-                                                            " photos that had undergone AI face swapping, AI blur removal, or AI addition or deletion of objects."
+                                                            " photos that have undergone AI face swapping, AI blur removal, or AI addition or deletion of objects."
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                        lineNumber: 49,
+                                                        lineNumber: 51,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                                lineNumber: 45,
+                                                lineNumber: 47,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 45,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                lineNumber: 23,
+                                lineNumber: 22,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                            lineNumber: 22,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-green-50 border-l-4 border-green-500 rounded-r-lg p-6",
+                            className: "bg-[#606C5D]/30 border-l-4 border-[#606C5D] rounded-r-lg p-6",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-base text-gray-900 leading-relaxed",
                                 children: [
-                                    "Now, try to identify the images in front of you as ",
+                                    "Now, try to identify the images in front of you as",
+                                    " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                         children: "quickly"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                        lineNumber: 62,
-                                        columnNumber: 66
+                                        lineNumber: 67,
+                                        columnNumber: 15
                                     }, this),
                                     " and ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                         children: "accurately"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                        lineNumber: 62,
-                                        columnNumber: 95
+                                        lineNumber: 67,
+                                        columnNumber: 44
                                     }, this),
                                     " as possible!"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                                lineNumber: 61,
+                                lineNumber: 65,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                            lineNumber: 60,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                    lineNumber: 21,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: onBegin,
-                    className: "w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-4 px-6 rounded-lg transition-all text-lg font-medium shadow-lg hover:shadow-xl flex items-center justify-center gap-2",
+                    className: "w-full bg-[#606C5D] hover:bg-[#606C5D]/50 text-white py-4 px-6 rounded-lg transition-all text-lg font-medium shadow-lg hover:shadow-xl flex items-center justify-center gap-2",
                     children: [
                         "Begin the Quiz!",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                             className: "w-5 h-5"
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                            lineNumber: 73,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-                    lineNumber: 68,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-            lineNumber: 13,
+            lineNumber: 11,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Documents/GitHub/mie_project/components/InstructionPage.tsx",
-        lineNumber: 12,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 }
@@ -741,7 +684,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_p
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-client] (ecmascript) <export default as CheckCircle2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/circle-x.js [app-client] (ecmascript) <export default as XCircle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Timer$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/timer.js [app-client] (ecmascript) <export default as Timer>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript)");
 ;
@@ -836,329 +778,277 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center p-4",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-white rounded-2xl shadow-xl p-8 max-w-4xl w-full",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mb-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between mb-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-2xl text-gray-900",
-                                        children: "Image Evaluation"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 105,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-4 text-gray-600",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center gap-2",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                        className: "w-5 h-5"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                        lineNumber: 108,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-sm",
-                                                        children: currentMode === 1 ? "With feedback" : "No feedback"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                        lineNumber: 109,
-                                                        columnNumber: 17
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                lineNumber: 107,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center gap-2 bg-gray-100 px-3 py-1 rounded-lg",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Timer$3e$__["Timer"], {
-                                                        className: "w-5 h-5"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                        lineNumber: 114,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-sm font-mono",
-                                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatTimeMMSS"])(elapsedTime)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                        lineNumber: 115,
-                                                        columnNumber: 17
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                lineNumber: 113,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 106,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 104,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-4 mb-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex-1 bg-gray-200 rounded-full h-2",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-indigo-600 h-2 rounded-full transition-all duration-300",
-                                            style: {
-                                                width: `${(currentIndex + 1) / totalImages * 100}%`
-                                            }
-                                        }, void 0, false, {
-                                            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                            lineNumber: 124,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 123,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-sm text-gray-600",
-                                        children: [
-                                            currentIndex + 1,
-                                            " / ",
-                                            totalImages
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 131,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 122,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-gray-600",
-                                children: [
-                                    currentIndex < 10 ? "First set" : "Second set",
-                                    " •",
-                                    " ",
-                                    currentMode === 1 ? "With feedback" : "No feedback"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 136,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                        lineNumber: 103,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mb-6",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: currentImage.url,
-                            alt: `Image ${currentIndex + 1}`,
-                            className: "w-full max-h-[60vh] object-contain rounded-lg shadow-md"
-                        }, void 0, false, {
-                            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                            lineNumber: 143,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                        lineNumber: 142,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-lg text-gray-900 text-center",
-                                children: "Is this image AI-generated or a real photograph?"
-                            }, void 0, false, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 151,
-                                columnNumber: 11
-                            }, this),
-                            !inlineFeedback ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-1 sm:grid-cols-2 gap-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>handleAnswer(false),
-                                        className: "bg-green-600 hover:bg-green-700 text-white py-4 px-6 rounded-lg transition-colors",
-                                        children: "Real Photo"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 158,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>handleAnswer(true),
-                                        className: "bg-red-600 hover:bg-red-700 text-white py-4 px-6 rounded-lg transition-colors",
-                                        children: "AI-Generated"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                        lineNumber: 165,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 156,
-                                columnNumber: 13
-                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `p-6 rounded-lg border-2 ${inlineFeedback.isCorrect ? "bg-green-50 border-green-300" : "bg-red-50 border-red-300"}`,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex flex-col md:flex-row md:items-center md:justify-between gap-4",
+        className: "min-h-screen bg-[#F7E6C4]/30 flex items-center justify-center p-4",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl w-full",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mb-6",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center justify-between mb-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-2xl text-black font-bold",
+                                    children: "Image Evaluation"
+                                }, void 0, false, {
+                                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                    lineNumber: 105,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-4 text-gray-600",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-3",
+                                            className: "flex items-center gap-2",
                                             children: [
-                                                inlineFeedback.isCorrect ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                                                    className: "w-8 h-8 text-green-600 flex-shrink-0"
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                    className: "w-5 h-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                    lineNumber: 183,
-                                                    columnNumber: 21
-                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
-                                                    className: "w-8 h-8 text-red-600 flex-shrink-0"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                    lineNumber: 185,
-                                                    columnNumber: 21
+                                                    lineNumber: 108,
+                                                    columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-md text-black",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: `text-lg ${inlineFeedback.isCorrect ? "text-green-900" : "text-red-900"}`,
-                                                            children: inlineFeedback.isCorrect ? "Correct!" : "Incorrect"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                            lineNumber: 188,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-sm text-gray-700",
-                                                            children: [
-                                                                "This image is",
-                                                                " ",
-                                                                inlineFeedback.correctAnswer ? "AI-Generated" : "a Real Photo"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                            lineNumber: 193,
-                                                            columnNumber: 21
-                                                        }, this)
+                                                        currentIndex < 10 ? "First set" : "Second set",
+                                                        " •",
+                                                        " ",
+                                                        currentMode === 1 ? "With feedback" : "No feedback"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                                    lineNumber: 187,
-                                                    columnNumber: 19
+                                                    lineNumber: 109,
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                            lineNumber: 181,
-                                            columnNumber: 17
+                                            lineNumber: 107,
+                                            columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: moveToNext,
-                                            className: "bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg transition-colors whitespace-nowrap md:w-auto w-full",
-                                            children: currentIndex < totalImages - 1 ? "Next" : "View Results"
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2 bg-gray-100 px-3 py-1 rounded-lg",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Timer$3e$__["Timer"], {
+                                                    className: "w-5 h-5"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                                    lineNumber: 115,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-md font-mono text-black",
+                                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatTimeMMSS"])(elapsedTime)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                                    lineNumber: 116,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                            lineNumber: 201,
-                                            columnNumber: 17
+                                            lineNumber: 114,
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                    lineNumber: 180,
+                                    lineNumber: 106,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                            lineNumber: 104,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-4 mb-2",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-1 bg-gray-200 rounded-full h-2",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "bg-[#F1C376] h-2 rounded-full transition-all duration-300",
+                                        style: {
+                                            width: `${(currentIndex + 1) / totalImages * 100}%`
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                        lineNumber: 125,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                    lineNumber: 124,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-md text-black",
+                                    children: [
+                                        currentIndex + 1,
+                                        " / ",
+                                        totalImages
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                    lineNumber: 132,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                            lineNumber: 123,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                    lineNumber: 103,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mb-6",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                        src: currentImage.url,
+                        alt: `Image ${currentIndex + 1}`,
+                        className: "bg-white w-full max-h-[65vh] object-contain rounded-lg shadow-md"
+                    }, void 0, false, {
+                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                        lineNumber: 139,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                    lineNumber: 138,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "space-y-4",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                            className: "text-lg text-black font-bold text-center",
+                            children: "Is this image AI-generated or a real photograph?"
+                        }, void 0, false, {
+                            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                            lineNumber: 147,
+                            columnNumber: 11
+                        }, this),
+                        !inlineFeedback ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 sm:grid-cols-2 gap-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>handleAnswer(false),
+                                    className: "bg-[#606C5D] hover:bg-[#606C5D]/80 text-white font-bold py-4 px-6 rounded-lg transition-colors",
+                                    children: "REAL!"
+                                }, void 0, false, {
+                                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                    lineNumber: 153,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>handleAnswer(true),
+                                    className: "bg-[#9E3B3B] hover:bg-[#9E3B3B]/80 text-white font-bold py-4 px-6 rounded-lg transition-colors",
+                                    children: "AI-GENERATED!"
+                                }, void 0, false, {
+                                    fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                    lineNumber: 160,
                                     columnNumber: 15
                                 }, this)
-                            }, void 0, false, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                            lineNumber: 152,
+                            columnNumber: 13
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `p-6 rounded-lg border-2 ${inlineFeedback.isCorrect ? "bg-[#6CA651]/30 border-[#6CA651]" : "bg-[#9E3B3B]/30 border-[#9E3B3B]"}`,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col md:flex-row md:items-center md:justify-between gap-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-3",
+                                        children: [
+                                            inlineFeedback.isCorrect ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                className: "w-8 h-8 text-[#6CA651] flex-shrink-0"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                                lineNumber: 178,
+                                                columnNumber: 21
+                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                                                className: "w-8 h-8 text-[#9E3B3B] flex-shrink-0"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                                lineNumber: 180,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: `text-lg ${inlineFeedback.isCorrect ? "text-[#6CA651]" : "text-[#9E3B3B]"} font-bold`,
+                                                        children: inlineFeedback.isCorrect ? "Correct!" : "Incorrect"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                                        lineNumber: 183,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-sm text-gray-700",
+                                                        children: [
+                                                            "This image is",
+                                                            " ",
+                                                            inlineFeedback.correctAnswer ? "AI-Generated" : "a Real Photo"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                                        lineNumber: 188,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                                lineNumber: 182,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                        lineNumber: 176,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: moveToNext,
+                                        className: "bg-[#F1C376] hover:bg-[#F1C376]/70 text-[#7B542F] font-bold py-3 px-12 rounded-lg transition-colors whitespace-nowrap md:w-auto w-full",
+                                        children: currentIndex < totalImages - 1 ? "Next" : "View Results"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+                                        lineNumber: 196,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 173,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                        lineNumber: 150,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                lineNumber: 102,
-                columnNumber: 7
-            }, this),
-            enlargedImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50",
-                onClick: ()=>setEnlargedImage(null),
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative bg-white rounded-lg p-4 max-w-5xl max-h-[90vh] overflow-auto",
-                    onClick: (e)=>e.stopPropagation(),
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>setEnlargedImage(null),
-                            className: "absolute top-2 right-2 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors z-10",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                className: "w-6 h-6 text-gray-700"
-                            }, void 0, false, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                                lineNumber: 227,
+                                lineNumber: 175,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                            lineNumber: 223,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: enlargedImage,
-                            alt: "Enlarged view",
-                            className: "w-full h-auto rounded-lg"
-                        }, void 0, false, {
-                            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                            lineNumber: 229,
+                            lineNumber: 168,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                    lineNumber: 219,
-                    columnNumber: 11
+                    lineNumber: 146,
+                    columnNumber: 9
                 }, this)
-            }, void 0, false, {
-                fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
-                lineNumber: 215,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
+            ]
+        }, void 0, true, {
+            fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
+            lineNumber: 102,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx",
         lineNumber: 101,
         columnNumber: 5
@@ -1186,7 +1076,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_p
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/trending-up.js [app-client] (ecmascript) <export default as TrendingUp>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$column$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BarChart3$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/chart-column.js [app-client] (ecmascript) <export default as BarChart3>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/lib/quizStatistics.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -1205,115 +1094,87 @@ function SummaryPage({ answers, images, consented, mode1First, onRestart }) {
     const firstSetMode = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getModeName"])(mode1First, 1);
     const secondSetMode = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getModeName"])(mode1First, 2);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-12 px-4",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-4xl mx-auto",
+        className: "min-h-screen bg-[#F7E6C4]/30 py-12 px-4",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl mx-auto",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid grid-cols-1 lg:grid-cols-2 gap-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white rounded-2xl shadow-xl p-8 mb-6",
+                        className: "bg-white rounded-2xl shadow-xl p-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-3xl mb-2 text-gray-900",
-                                children: "Study Complete!"
+                                className: "text-3xl mb-2 text-black font-semibold",
+                                children: "Quiz Complete!"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                lineNumber: 65,
-                                columnNumber: 11
+                                lineNumber: 67,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-gray-600 mb-6",
-                                children: "Thank you for participating in our research."
+                                children: "Thank you for participating in our game!"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                lineNumber: 66,
-                                columnNumber: 11
+                                lineNumber: 70,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `mb-8 p-4 rounded-lg border-2 ${consented ? "bg-green-50 border-green-300" : "bg-gray-50 border-gray-300"}`,
+                                className: `mb-8 p-4 rounded-lg border-2 ${consented ? "bg-[#6CA651]/10 border-[#6CA651]/40" : "bg-gray-50 border-gray-300"}`,
                                 children: consented ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-start gap-3",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                                            className: "w-6 h-6 text-green-600 flex-shrink-0 mt-1"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                            lineNumber: 80,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-base text-gray-900 mb-1",
-                                                    children: "Data Collection Consent Granted"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                    lineNumber: 82,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-gray-700",
-                                                    children: "Your anonymous performance data has been recorded for research purposes. This data will not be associated with any individual and will only be used to understand patterns in AI image detection."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                    lineNumber: 85,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                            lineNumber: 81,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm text-gray-700",
+                                        children: [
+                                            "Your anonymous performance",
+                                            " ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                children: "data has been recorded"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                lineNumber: 86,
+                                                columnNumber: 21
+                                            }, this),
+                                            ". This data will not be shared and will only be used for MIE286 project data analysis."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                        lineNumber: 84,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                    lineNumber: 79,
-                                    columnNumber: 15
+                                    lineNumber: 83,
+                                    columnNumber: 17
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-start gap-3",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
-                                            className: "w-6 h-6 text-gray-600 flex-shrink-0 mt-1"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                            lineNumber: 95,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-base text-gray-900 mb-1",
-                                                    children: "No Data Collection"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                    lineNumber: 97,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-gray-700",
-                                                    children: "As per your choice, no data from this session has been collected or stored."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                    lineNumber: 100,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                            lineNumber: 96,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-base text-gray-900 mb-1",
+                                        children: [
+                                            "As per your choice,",
+                                            " ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                children: "NO data has been collected or stored."
+                                            }, void 0, false, {
+                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                lineNumber: 95,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                        lineNumber: 93,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
                                     fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                    lineNumber: 94,
-                                    columnNumber: 15
+                                    lineNumber: 92,
+                                    columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                lineNumber: 71,
-                                columnNumber: 11
+                                lineNumber: 75,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "mb-8",
@@ -1325,43 +1186,43 @@ function SummaryPage({ answers, images, consented, mode1First, onRestart }) {
                                                 className: "w-6 h-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                lineNumber: 112,
-                                                columnNumber: 15
+                                                lineNumber: 104,
+                                                columnNumber: 17
                                             }, this),
                                             "Your Performance"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                        lineNumber: 111,
-                                        columnNumber: 13
+                                        lineNumber: 103,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "grid grid-cols-1 md:grid-cols-3 gap-4 mb-6",
+                                        className: "grid grid-cols-1 lg:grid-cols-3 gap-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-indigo-50 rounded-lg p-6 text-center",
+                                                className: "bg-[#9E3B3B]/20 rounded-lg p-4",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-3xl text-indigo-600 mb-2",
+                                                        className: "text-3xl text-[#9E3B3B] mb-2 text-center",
                                                         children: [
                                                             accuracy.toFixed(1),
                                                             "%"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 118,
-                                                        columnNumber: 17
+                                                        lineNumber: 110,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-sm text-gray-600",
+                                                        className: "text-md text-black text-center",
                                                         children: "Overall Accuracy"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 121,
-                                                        columnNumber: 17
+                                                        lineNumber: 113,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-xs text-gray-500 mt-1",
+                                                        className: "text-md text-black mt-1 text-center",
                                                         children: [
                                                             correctAnswers,
                                                             " / ",
@@ -1370,87 +1231,79 @@ function SummaryPage({ answers, images, consented, mode1First, onRestart }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 122,
-                                                        columnNumber: 17
+                                                        lineNumber: 116,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                lineNumber: 117,
-                                                columnNumber: 15
+                                                lineNumber: 109,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-purple-50 rounded-lg p-6 text-center",
+                                                className: "bg-[#F1C376]/20 rounded-lg p-4",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-3xl text-purple-600 mb-2",
+                                                        className: "text-3xl text-[#F1C376] mb-2 text-center",
                                                         children: [
                                                             (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatTimeSeconds"])(mode1TotalTime + mode2TotalTime),
                                                             "s"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 128,
-                                                        columnNumber: 17
+                                                        lineNumber: 122,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-sm text-gray-600",
+                                                        className: "text-md text-black text-center",
                                                         children: "Total Time"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 131,
-                                                        columnNumber: 17
+                                                        lineNumber: 125,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                lineNumber: 127,
-                                                columnNumber: 15
+                                                lineNumber: 121,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-teal-50 rounded-lg p-6 text-center",
+                                                className: "bg-[#606C5D]/20 rounded-lg p-4",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-3xl text-teal-600 mb-2",
+                                                        className: "text-3xl text-[#606C5D] mb-2 text-center",
                                                         children: mode1First ? "1→2" : "2→1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 135,
-                                                        columnNumber: 17
+                                                        lineNumber: 131,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-sm text-gray-600",
-                                                        children: "Mode Order"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 138,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-xs text-gray-500 mt-1",
+                                                        className: "text-md text-black mt-1 text-center",
                                                         children: mode1First ? "With then No feedback" : "No then With feedback"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 139,
-                                                        columnNumber: 17
+                                                        lineNumber: 134,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                lineNumber: 134,
-                                                columnNumber: 15
+                                                lineNumber: 130,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                        lineNumber: 116,
-                                        columnNumber: 13
+                                        lineNumber: 108,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                lineNumber: 110,
-                                columnNumber: 11
+                                lineNumber: 102,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "mb-8",
@@ -1462,341 +1315,290 @@ function SummaryPage({ answers, images, consented, mode1First, onRestart }) {
                                                 className: "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                lineNumber: 151,
-                                                columnNumber: 15
+                                                lineNumber: 146,
+                                                columnNumber: 17
                                             }, this),
                                             "Performance by Feedback Mode"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                        lineNumber: 150,
-                                        columnNumber: 13
+                                        lineNumber: 145,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                                        className: "grid grid-cols-1 lg:grid-cols-2 gap-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-blue-50 rounded-lg p-5 border border-blue-200",
+                                                className: "bg-[#F1C376]/20 rounded-lg p-4 border border-[#F1C376]",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "text-lg text-gray-900 mb-3",
+                                                        className: "text-lg text-black mb-2",
                                                         children: "Images 1-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 157,
-                                                        columnNumber: 17
+                                                        lineNumber: 152,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-xl text-indigo-600 mb-1",
+                                                        className: "text-xl font-semibold mb-1",
                                                         children: [
                                                             Math.round(mode1First ? mode1Accuracy : mode2Accuracy),
                                                             "% accuracy"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 158,
-                                                        columnNumber: 17
+                                                        lineNumber: 153,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-xl text-purple-600 mb-1",
+                                                        className: "text-md text-[#7B542F] mb-1",
                                                         children: [
                                                             (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatTimeSeconds"])(mode1First ? mode1AvgTime : mode2AvgTime),
                                                             "s Avg Response Time"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 162,
-                                                        columnNumber: 17
+                                                        lineNumber: 157,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-xl text-teal-600",
+                                                        className: "text-md",
                                                         children: firstSetMode
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 166,
-                                                        columnNumber: 17
+                                                        lineNumber: 163,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                lineNumber: 156,
-                                                columnNumber: 15
+                                                lineNumber: 151,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-pink-50 rounded-lg p-5 border border-pink-200",
+                                                className: "bg-[#606C5D]/20 rounded-lg p-4 border border-[#606C5D]",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "text-lg text-gray-900 mb-3",
+                                                        className: "text-lg text-black mb-2",
                                                         children: "Images 11-20"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 170,
-                                                        columnNumber: 17
+                                                        lineNumber: 167,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-xl text-indigo-600 mb-1",
+                                                        className: "text-xl font-semibold mb-1",
                                                         children: [
                                                             Math.round(mode1First ? mode2Accuracy : mode1Accuracy),
                                                             "% accuracy"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 171,
-                                                        columnNumber: 17
+                                                        lineNumber: 168,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-xl text-purple-600 mb-1",
+                                                        className: "text-md text-[#7B542F] mb-1",
                                                         children: [
                                                             (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatTimeSeconds"])(mode1First ? mode2AvgTime : mode1AvgTime),
                                                             "s Avg Response Time"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 175,
-                                                        columnNumber: 17
+                                                        lineNumber: 172,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-xl text-teal-600",
+                                                        className: "text-md",
                                                         children: secondSetMode
                                                     }, void 0, false, {
                                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 179,
-                                                        columnNumber: 17
+                                                        lineNumber: 178,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                lineNumber: 169,
-                                                columnNumber: 15
+                                                lineNumber: 166,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                        lineNumber: 155,
-                                        columnNumber: 13
+                                        lineNumber: 150,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                lineNumber: 149,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mb-6",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-xl mb-2 text-gray-900",
-                                        children: "Detailed Results"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                        lineNumber: 186,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm text-gray-600 mb-4",
-                                        children: "Click on any image to enlarge"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                        lineNumber: 187,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "space-y-2 max-h-96 overflow-y-auto",
-                                        children: answers.map((answer, index)=>{
-                                            const imageData = images.find((img)=>img.id === answer.imageId);
-                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: `flex items-center gap-3 p-3 rounded-lg ${answer.isCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"}`,
-                                                children: [
-                                                    imageData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                        src: imageData.url,
-                                                        alt: `Image ${index + 1}`,
-                                                        className: "w-16 h-16 object-cover rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity",
-                                                        onClick: ()=>setEnlargedImage(imageData.url)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 207,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex-1 flex items-center justify-between",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-3",
-                                                                children: [
-                                                                    answer.isCorrect ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                                                                        className: "w-5 h-5 text-green-600"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                                        lineNumber: 218,
-                                                                        columnNumber: 27
-                                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
-                                                                        className: "w-5 h-5 text-red-600"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                                        lineNumber: 220,
-                                                                        columnNumber: 27
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                className: "text-sm text-gray-900",
-                                                                                children: [
-                                                                                    "Image #",
-                                                                                    index + 1
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                                                lineNumber: 223,
-                                                                                columnNumber: 27
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                className: "text-xs text-gray-600",
-                                                                                children: answer.correctAnswer ? "AI-Generated" : "Real Photo"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                                                lineNumber: 226,
-                                                                                columnNumber: 27
-                                                                            }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                                        lineNumber: 222,
-                                                                        columnNumber: 25
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                                lineNumber: 216,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "text-right",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "flex items-center gap-2 text-xs text-gray-600",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                                            className: "w-3 h-3"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                                            lineNumber: 235,
-                                                                            columnNumber: 27
-                                                                        }, this),
-                                                                        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatTimeSeconds"])(answer.responseTime),
-                                                                        "s"
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                                    lineNumber: 234,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                                lineNumber: 233,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                        lineNumber: 215,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, answer.imageId, true, {
-                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                                lineNumber: 197,
-                                                columnNumber: 19
-                                            }, this);
-                                        })
-                                    }, void 0, false, {
-                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                        lineNumber: 191,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                lineNumber: 185,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: onRestart,
-                                className: "w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg transition-colors",
-                                children: "Start New Study"
-                            }, void 0, false, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                lineNumber: 246,
-                                columnNumber: 11
+                                lineNumber: 144,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                        lineNumber: 64,
-                        columnNumber: 9
+                        lineNumber: 66,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-center text-sm text-gray-600",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            children: "Thank you for contributing to AI research!"
-                        }, void 0, false, {
-                            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                            lineNumber: 255,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                        className: "bg-white rounded-2xl shadow-xl p-8",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-2xl mb-2 text-gray-900",
+                                children: "Detailed Results"
+                            }, void 0, false, {
+                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                lineNumber: 186,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-2 max-h-[calc(100vh-300px)] overflow-y-auto pr-2 mb-6",
+                                children: answers.map((answer, index)=>{
+                                    const imageData = images.find((img)=>img.id === answer.imageId);
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: `flex items-center gap-3 p-3 rounded-lg ${answer.isCorrect ? "bg-[#6CA651]/10 border border-[#6CA651]" : "bg-[#9E3B3B]/10 border border-[#9E3B3B]"}`,
+                                        children: [
+                                            imageData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: imageData.url,
+                                                alt: `Image ${index + 1}`,
+                                                className: "w-16 h-16 object-cover rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity",
+                                                onClick: ()=>setEnlargedImage(imageData.url)
+                                            }, void 0, false, {
+                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                lineNumber: 204,
+                                                columnNumber: 23
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex-1 flex items-center justify-between",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-3",
+                                                        children: [
+                                                            answer.isCorrect ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                                className: "w-5 h-5 text-green-600"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                                lineNumber: 215,
+                                                                columnNumber: 27
+                                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                                                                className: "w-5 h-5 text-red-600"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                                lineNumber: 217,
+                                                                columnNumber: 27
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-sm text-gray-900",
+                                                                        children: [
+                                                                            "Image #",
+                                                                            index + 1
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                                        lineNumber: 220,
+                                                                        columnNumber: 27
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-xs text-gray-600",
+                                                                        children: answer.correctAnswer ? "AI-Generated" : "Real Photo"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                                        lineNumber: 223,
+                                                                        columnNumber: 27
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                                lineNumber: 219,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                        lineNumber: 213,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "text-right",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center gap-2 text-xs text-gray-600",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                                    className: "w-3 h-3"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                                    lineNumber: 232,
+                                                                    columnNumber: 27
+                                                                }, this),
+                                                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$quizStatistics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatTimeSeconds"])(answer.responseTime),
+                                                                "s"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                            lineNumber: 231,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                        lineNumber: 230,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                                lineNumber: 212,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, answer.imageId, true, {
+                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                        lineNumber: 194,
+                                        columnNumber: 19
+                                    }, this);
+                                })
+                            }, void 0, false, {
+                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                lineNumber: 188,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                children: [
+                                    "Whether you choose to have your data collected or not,",
+                                    " ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                        children: "please don't take another quiz attempt"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                        lineNumber: 244,
+                                        columnNumber: 15
+                                    }, this),
+                                    " to ensure data integrity and accuracy. We appreciate your participation and contribution to our project! (You are good to close the tab)"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+                                lineNumber: 242,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                        lineNumber: 254,
-                        columnNumber: 9
+                        lineNumber: 185,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                lineNumber: 63,
-                columnNumber: 7
-            }, this),
-            enlargedImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50",
-                onClick: ()=>setEnlargedImage(null),
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative bg-white rounded-lg p-4 max-w-5xl max-h-[90vh] overflow-auto",
-                    onClick: (e)=>e.stopPropagation(),
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>setEnlargedImage(null),
-                            className: "absolute top-2 right-2 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors z-10",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                className: "w-6 h-6 text-gray-700"
-                            }, void 0, false, {
-                                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                                lineNumber: 273,
-                                columnNumber: 15
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                            lineNumber: 269,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: enlargedImage,
-                            alt: "Enlarged view",
-                            className: "w-full h-auto rounded-lg"
-                        }, void 0, false, {
-                            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                            lineNumber: 275,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                    lineNumber: 265,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
-                lineNumber: 261,
+                lineNumber: 64,
                 columnNumber: 9
             }, this)
-        ]
-    }, void 0, true, {
+        }, void 0, false, {
+            fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
+            lineNumber: 63,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
         lineNumber: 62,
         columnNumber: 5

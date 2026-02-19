@@ -59,136 +59,133 @@ export function SummaryPage({
   const secondSetMode = getModeName(mode1First, 2);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-12 px-4">
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
-          <h1 className="text-3xl mb-2 text-gray-900">Study Complete!</h1>
-          <p className="text-gray-600 mb-6">
-            Thank you for participating in our research.
-          </p>
-
-          {/* Data Collection Notice */}
-          <div
-            className={`mb-8 p-4 rounded-lg border-2 ${
-              consented
-                ? "bg-green-50 border-green-300"
-                : "bg-gray-50 border-gray-300"
-            }`}
-          >
-            {consented ? (
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-base text-gray-900 mb-1">
-                    Data Collection Consent Granted
-                  </h3>
-                  <p className="text-sm text-gray-700">
-                    Your anonymous performance data has been recorded for
-                    research purposes. This data will not be associated with any
-                    individual and will only be used to understand patterns in
-                    AI image detection.
-                  </p>
-                </div>
-              </div>
-            ) : (
-              <div className="flex items-start gap-3">
-                <XCircle className="w-6 h-6 text-gray-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-base text-gray-900 mb-1">
-                    No Data Collection
-                  </h3>
-                  <p className="text-sm text-gray-700">
-                    As per your choice, no data from this session has been
-                    collected or stored.
-                  </p>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Overall Performance */}
-          <div className="mb-8">
-            <h2 className="text-2xl mb-4 text-gray-900 flex items-center gap-2">
-              <BarChart3 className="w-6 h-6" />
-              Your Performance
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-indigo-50 rounded-lg p-6 text-center">
-                <div className="text-3xl text-indigo-600 mb-2">
-                  {accuracy.toFixed(1)}%
-                </div>
-                <div className="text-sm text-gray-600">Overall Accuracy</div>
-                <div className="text-xs text-gray-500 mt-1">
-                  {correctAnswers} / {totalQuestions} correct
-                </div>
-              </div>
-
-              <div className="bg-purple-50 rounded-lg p-6 text-center">
-                <div className="text-3xl text-purple-600 mb-2">
-                  {formatTimeSeconds(mode1TotalTime + mode2TotalTime)}s
-                </div>
-                <div className="text-sm text-gray-600">Total Time</div>
-              </div>
-
-              <div className="bg-teal-50 rounded-lg p-6 text-center">
-                <div className="text-3xl text-teal-600 mb-2">
-                  {mode1First ? "1→2" : "2→1"}
-                </div>
-                <div className="text-sm text-gray-600">Mode Order</div>
-                <div className="text-xs text-gray-500 mt-1">
-                  {mode1First
-                    ? "With then No feedback"
-                    : "No then With feedback"}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Performance by Mode */}
-          <div className="mb-8">
-            <h2 className="text-xl mb-4 text-gray-900 flex items-center gap-2">
-              <TrendingUp className="w-5 h-5" />
-              Performance by Feedback Mode
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-blue-50 rounded-lg p-5 border border-blue-200">
-                <h3 className="text-lg text-gray-900 mb-3">Images 1-10</h3>
-                <div className="text-xl text-indigo-600 mb-1">
-                  {Math.round(mode1First ? mode1Accuracy : mode2Accuracy)}%
-                  accuracy
-                </div>
-                <div className="text-xl text-purple-600 mb-1">
-                  {formatTimeSeconds(mode1First ? mode1AvgTime : mode2AvgTime)}s
-                  Avg Response Time
-                </div>
-                <div className="text-xl text-teal-600">{firstSetMode}</div>
-              </div>
-
-              <div className="bg-pink-50 rounded-lg p-5 border border-pink-200">
-                <h3 className="text-lg text-gray-900 mb-3">Images 11-20</h3>
-                <div className="text-xl text-indigo-600 mb-1">
-                  {Math.round(mode1First ? mode2Accuracy : mode1Accuracy)}%
-                  accuracy
-                </div>
-                <div className="text-xl text-purple-600 mb-1">
-                  {formatTimeSeconds(mode1First ? mode2AvgTime : mode1AvgTime)}s
-                  Avg Response Time
-                </div>
-                <div className="text-xl text-teal-600">{secondSetMode}</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Detailed Results */}
-          <div className="mb-6">
-            <h2 className="text-xl mb-2 text-gray-900">Detailed Results</h2>
-            <p className="text-sm text-gray-600 mb-4">
-              Click on any image to enlarge
+    <div className="min-h-screen bg-[#F7E6C4]/30 py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* LEFT COLUMN: Summary Info */}
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <h1 className="text-3xl mb-2 text-black font-semibold">
+              Quiz Complete!
+            </h1>
+            <p className="text-gray-600 mb-6">
+              Thank you for participating in our game!
             </p>
 
-            <div className="space-y-2 max-h-96 overflow-y-auto">
+            {/* Data Collection Notice */}
+            <div
+              className={`mb-8 p-4 rounded-lg border-2 ${
+                consented
+                  ? "bg-[#6CA651]/10 border-[#6CA651]/40"
+                  : "bg-gray-50 border-gray-300"
+              }`}
+            >
+              {consented ? (
+                <div className="flex items-start gap-3">
+                  <p className="text-sm text-gray-700">
+                    Your anonymous performance{" "}
+                    <strong>data has been recorded</strong>. This data will not
+                    be shared and will only be used for MIE286 project data
+                    analysis.
+                  </p>
+                </div>
+              ) : (
+                <div className="flex items-start gap-3">
+                  <h3 className="text-base text-gray-900 mb-1">
+                    As per your choice,{" "}
+                    <strong>NO data has been collected or stored.</strong>
+                  </h3>
+                </div>
+              )}
+            </div>
+
+            {/* Overall Performance */}
+            <div className="mb-8">
+              <h2 className="text-2xl mb-4 text-gray-900 flex items-center gap-2">
+                <BarChart3 className="w-6 h-6" />
+                Your Performance
+              </h2>
+
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div className="bg-[#9E3B3B]/20 rounded-lg p-4">
+                  <div className="text-3xl text-[#9E3B3B] mb-2 text-center">
+                    {accuracy.toFixed(1)}%
+                  </div>
+                  <div className="text-md text-black text-center">
+                    Overall Accuracy
+                  </div>
+                  <div className="text-md text-black mt-1 text-center">
+                    {correctAnswers} / {totalQuestions} correct
+                  </div>
+                </div>
+
+                <div className="bg-[#F1C376]/20 rounded-lg p-4">
+                  <div className="text-3xl text-[#F1C376] mb-2 text-center">
+                    {formatTimeSeconds(mode1TotalTime + mode2TotalTime)}s
+                  </div>
+                  <div className="text-md text-black text-center">
+                    Total Time
+                  </div>
+                </div>
+
+                <div className="bg-[#606C5D]/20 rounded-lg p-4">
+                  <div className="text-3xl text-[#606C5D] mb-2 text-center">
+                    {mode1First ? "1→2" : "2→1"}
+                  </div>
+                  <div className="text-md text-black mt-1 text-center">
+                    {mode1First
+                      ? "With then No feedback"
+                      : "No then With feedback"}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Performance by Mode */}
+            <div className="mb-8">
+              <h2 className="text-xl mb-4 text-gray-900 flex items-center gap-2">
+                <TrendingUp className="w-5 h-5" />
+                Performance by Feedback Mode
+              </h2>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div className="bg-[#F1C376]/20 rounded-lg p-4 border border-[#F1C376]">
+                  <h3 className="text-lg text-black mb-2">Images 1-10</h3>
+                  <div className="text-xl font-semibold mb-1">
+                    {Math.round(mode1First ? mode1Accuracy : mode2Accuracy)}%
+                    accuracy
+                  </div>
+                  <div className="text-md text-[#7B542F] mb-1">
+                    {formatTimeSeconds(
+                      mode1First ? mode1AvgTime : mode2AvgTime,
+                    )}
+                    s Avg Response Time
+                  </div>
+                  <div className="text-md">{firstSetMode}</div>
+                </div>
+
+                <div className="bg-[#606C5D]/20 rounded-lg p-4 border border-[#606C5D]">
+                  <h3 className="text-lg text-black mb-2">Images 11-20</h3>
+                  <div className="text-xl font-semibold mb-1">
+                    {Math.round(mode1First ? mode2Accuracy : mode1Accuracy)}%
+                    accuracy
+                  </div>
+                  <div className="text-md text-[#7B542F] mb-1">
+                    {formatTimeSeconds(
+                      mode1First ? mode2AvgTime : mode1AvgTime,
+                    )}
+                    s Avg Response Time
+                  </div>
+                  <div className="text-md">{secondSetMode}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT COLUMN: Detailed Results */}
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <h2 className="text-2xl mb-2 text-gray-900">Detailed Results</h2>
+
+            <div className="space-y-2 max-h-[calc(100vh-300px)] overflow-y-auto pr-2 mb-6">
               {answers.map((answer, index) => {
                 const imageData = images.find(
                   (img) => img.id === answer.imageId,
@@ -198,8 +195,8 @@ export function SummaryPage({
                     key={answer.imageId}
                     className={`flex items-center gap-3 p-3 rounded-lg ${
                       answer.isCorrect
-                        ? "bg-green-50 border border-green-200"
-                        : "bg-red-50 border border-red-200"
+                        ? "bg-[#6CA651]/10 border border-[#6CA651]"
+                        : "bg-[#9E3B3B]/10 border border-[#9E3B3B]"
                     }`}
                   >
                     {/* Image Thumbnail - Clickable */}
@@ -241,22 +238,18 @@ export function SummaryPage({
                 );
               })}
             </div>
+
+            <p>
+              Whether you choose to have your data collected or not,{" "}
+              <strong>please don't take another quiz attempt</strong> to ensure
+              data integrity and accuracy. We appreciate your participation and
+              contribution to our project! (You are good to close the tab)
+            </p>
           </div>
-
-          <button
-            onClick={onRestart}
-            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg transition-colors"
-          >
-            Start New Study
-          </button>
-        </div>
-
-        <div className="text-center text-sm text-gray-600">
-          <p>Thank you for contributing to AI research!</p>
         </div>
       </div>
 
-      {/* Enlarged Image Modal */}
+      {/* Enlarged Image Modal
       {enlargedImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50"
@@ -279,7 +272,7 @@ export function SummaryPage({
             />
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

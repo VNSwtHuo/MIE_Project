@@ -1,28 +1,27 @@
 "use client";
 
 import React, { useState } from "react";
-import { Brain, Shield, Clock, Target } from "lucide-react";
+import { Shield, Clock, Image } from "lucide-react";
 
 interface StartPageProps {
   onStart: (consented: boolean) => void;
 }
 
 export function StartPage({ onStart }: StartPageProps) {
-  const [agreed, setAgreed] = useState(false);
-  const [showDialog, setShowDialog] = useState(false);
+  const [agreed, setAgreed] = useState(true);
 
   const handleNext = () => {
     if (!agreed) {
-      setShowDialog(true);
+      onStart(false);
     } else {
       onStart(true);
     }
   };
 
-  const handleDialogResponse = (consent: boolean) => {
-    setShowDialog(false);
-    onStart(consent);
-  };
+  // const handleDialogResponse = (consent: boolean) => {
+  //   setShowDialog(false);
+  //   onStart(consent);
+  // };
 
   return (
     <div className="min-h-screen bg-[#F7E6C4]/30 flex items-center justify-center p-4">
@@ -49,8 +48,8 @@ export function StartPage({ onStart }: StartPageProps) {
 
           {/* Feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-            <div className="bg-[#76453B]/30 rounded-lg p-4 text-center">
-              <Target className="w-8 h-8 text-[#76453B] mx-auto mb-2" />
+            <div className="bg-[#9E3B3B]/30 rounded-lg p-4 text-center">
+              <Image className="w-8 h-8 text-[#9E3B3B] mx-auto mb-2" />
               <p className="text-sm text-gray-700">
                 <strong>20 Images</strong>
               </p>
@@ -80,9 +79,12 @@ export function StartPage({ onStart }: StartPageProps) {
               be associated with personal information, shared, or used for any
               purpose other than for this MIE286 project data analysis.{" "}
               <strong>
-                Even if you do not agree to data collection, you can still
-                experience this fun quiz!
-              </strong>
+                Even if you do not agree to data collection, you can still take
+                this fun quiz!
+              </strong>{" "}
+              However, whether you choose to have your data collected or not,{" "}
+              <strong>please don't take another quiz attempt</strong> to ensure
+              data integrity and accuracy.
             </p>
           </div>
         </div>
@@ -111,7 +113,7 @@ export function StartPage({ onStart }: StartPageProps) {
           Next
         </button>
 
-        {/* Confirmation Dialog */}
+        {/* Confirmation Dialog
         {showDialog && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
             <div className="bg-white rounded-xl shadow-2xl p-6 max-w-md w-full">
@@ -139,7 +141,7 @@ export function StartPage({ onStart }: StartPageProps) {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

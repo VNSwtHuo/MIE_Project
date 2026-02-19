@@ -98,21 +98,22 @@ export function ImageEvaluationPage({
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-xl p-8 max-w-4xl w-full">
+    <div className="min-h-screen bg-[#F7E6C4]/30 flex items-center justify-center p-4">
+      <div className="max-w-7xl w-full">
         <div className="mb-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl text-gray-900">Image Evaluation</h2>
+            <h2 className="text-2xl text-black font-bold">Image Evaluation</h2>
             <div className="flex items-center gap-4 text-gray-600">
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5" />
-                <span className="text-sm">
+                <p className="text-md text-black">
+                  {currentIndex < 10 ? "First set" : "Second set"} •{" "}
                   {currentMode === 1 ? "With feedback" : "No feedback"}
-                </span>
+                </p>
               </div>
               <div className="flex items-center gap-2 bg-gray-100 px-3 py-1 rounded-lg">
                 <Timer className="w-5 h-5" />
-                <span className="text-sm font-mono">
+                <span className="text-md font-mono text-black">
                   {formatTimeMMSS(elapsedTime)}
                 </span>
               </div>
@@ -122,71 +123,65 @@ export function ImageEvaluationPage({
           <div className="flex items-center gap-4 mb-2">
             <div className="flex-1 bg-gray-200 rounded-full h-2">
               <div
-                className="bg-indigo-600 h-2 rounded-full transition-all duration-300"
+                className="bg-[#F1C376] h-2 rounded-full transition-all duration-300"
                 style={{
                   width: `${((currentIndex + 1) / totalImages) * 100}%`,
                 }}
               />
             </div>
-            <span className="text-sm text-gray-600">
+            <span className="text-md text-black">
               {currentIndex + 1} / {totalImages}
             </span>
           </div>
-
-          <p className="text-sm text-gray-600">
-            {currentIndex < 10 ? "First set" : "Second set"} •{" "}
-            {currentMode === 1 ? "With feedback" : "No feedback"}
-          </p>
         </div>
 
         <div className="mb-6">
           <img
             src={currentImage.url}
             alt={`Image ${currentIndex + 1}`}
-            className="w-full max-h-[60vh] object-contain rounded-lg shadow-md"
+            className="bg-white w-full max-h-[65vh] object-contain rounded-lg shadow-md"
           />
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-lg text-gray-900 text-center">
+          <h3 className="text-lg text-black font-bold text-center">
             Is this image AI-generated or a real photograph?
           </h3>
 
           {!inlineFeedback ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* Swapped positions: Real Photo (green) on left, AI-Generated (red) on right */}
               <button
                 onClick={() => handleAnswer(false)}
-                className="bg-green-600 hover:bg-green-700 text-white py-4 px-6 rounded-lg transition-colors"
+                className="bg-[#606C5D] hover:bg-[#606C5D]/80 text-white font-bold py-4 px-6 rounded-lg transition-colors"
               >
-                Real Photo
+                REAL!
               </button>
 
               <button
                 onClick={() => handleAnswer(true)}
-                className="bg-red-600 hover:bg-red-700 text-white py-4 px-6 rounded-lg transition-colors"
+                className="bg-[#9E3B3B] hover:bg-[#9E3B3B]/80 text-white font-bold py-4 px-6 rounded-lg transition-colors"
               >
-                AI-Generated
+                AI-GENERATED!
               </button>
             </div>
           ) : (
             <div
               className={`p-6 rounded-lg border-2 ${
                 inlineFeedback.isCorrect
-                  ? "bg-green-50 border-green-300"
-                  : "bg-red-50 border-red-300"
+                  ? "bg-[#6CA651]/30 border-[#6CA651]"
+                  : "bg-[#9E3B3B]/30 border-[#9E3B3B]"
               }`}
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="flex items-center gap-3">
                   {inlineFeedback.isCorrect ? (
-                    <CheckCircle2 className="w-8 h-8 text-green-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-8 h-8 text-[#6CA651] flex-shrink-0" />
                   ) : (
-                    <XCircle className="w-8 h-8 text-red-600 flex-shrink-0" />
+                    <XCircle className="w-8 h-8 text-[#9E3B3B] flex-shrink-0" />
                   )}
                   <div>
                     <p
-                      className={`text-lg ${inlineFeedback.isCorrect ? "text-green-900" : "text-red-900"}`}
+                      className={`text-lg ${inlineFeedback.isCorrect ? "text-[#6CA651]" : "text-[#9E3B3B]"} font-bold`}
                     >
                       {inlineFeedback.isCorrect ? "Correct!" : "Incorrect"}
                     </p>
@@ -200,7 +195,7 @@ export function ImageEvaluationPage({
                 </div>
                 <button
                   onClick={moveToNext}
-                  className="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg transition-colors whitespace-nowrap md:w-auto w-full"
+                  className="bg-[#F1C376] hover:bg-[#F1C376]/70 text-[#7B542F] font-bold py-3 px-12 rounded-lg transition-colors whitespace-nowrap md:w-auto w-full"
                 >
                   {currentIndex < totalImages - 1 ? "Next" : "View Results"}
                 </button>
@@ -210,7 +205,7 @@ export function ImageEvaluationPage({
         </div>
       </div>
 
-      {/* Enlarged Image Modal */}
+      {/* Enlarged Image Modal
       {enlargedImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50"
@@ -233,7 +228,7 @@ export function ImageEvaluationPage({
             />
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
