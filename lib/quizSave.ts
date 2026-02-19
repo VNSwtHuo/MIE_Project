@@ -1,4 +1,4 @@
-import {db} from "./firebase";
+import {getDbInstance} from "./firebase";
 import {collection, addDoc, Timestamp} from "firebase/firestore";
 
 interface DetailedAnswer {
@@ -33,6 +33,11 @@ export const saveQuizDataToFirebase = async (
     answers: DetailedAnswer[], 
     noFeedbackFirst: boolean) => {
         try {
+            const db = getDbInstance();
+            if (!db) {
+                throw new Error("Firebase database not initialized");
+            }
+
             const Accuracy = answers.filter((a) => a.isCorrect).length / 20;
             const WFAccuracy = answers.filter((a) => a.mode && a.isCorrect).length / 10;
             const WOFAccuracy = answers.filter((a) => !a.mode && a.isCorrect).length / 10;

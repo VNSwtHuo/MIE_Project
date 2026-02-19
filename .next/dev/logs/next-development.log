@@ -126,3 +126,534 @@
 [00:02:51.429] Browser LOG     Quiz data saved successfully:  81WZX7otXduj1nxHN8Pp
 [00:02:51.429] Browser LOG     Quiz data successfully saved to Firebase
 [00:12:31.294] Server  LOG     ✓ Compiled in 56ms
+[00:20:06.121] Server  LOG     ✓ Compiled in 252ms
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/components/App.tsx:9:1
+Export auth doesn't exist in target module
+   7 | import { SummaryPage } from "./SummaryPage";
+   8 | import { getRandomImages, ImageData } from "@/lib/imageDataset";
+>  9 | import { auth } from "@/lib/firebase";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { signInAnonymously } from "firebase/auth";
+  11 | import { saveQuizDataToFirebase } from "@/lib/quizSave";
+  12 | import { Answer } from "@/lib/quizStatistics";
+
+The export auth was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getAuthInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./Documents/GitHub/mie_project/components/App.tsx
+    ./Documents/GitHub/mie_project/app/page.tsx
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/components/App.tsx:9:1
+Export auth doesn't exist in target module
+   7 | import { SummaryPage } from "./SummaryPage";
+   8 | import { getRandomImages, ImageData } from "@/lib/imageDataset";
+>  9 | import { auth } from "@/lib/firebase";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { signInAnonymously } from "firebase/auth";
+  11 | import { saveQuizDataToFirebase } from "@/lib/quizSave";
+  12 | import { Answer } from "@/lib/quizStatistics";
+
+The export auth was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getAuthInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./Documents/GitHub/mie_project/components/App.tsx
+    ./Documents/GitHub/mie_project/app/page.tsx
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/components/App.tsx:9:1
+Export auth doesn't exist in target module
+   7 | import { SummaryPage } from "./SummaryPage";
+   8 | import { getRandomImages, ImageData } from "@/lib/imageDataset";
+>  9 | import { auth } from "@/lib/firebase";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { signInAnonymously } from "firebase/auth";
+  11 | import { saveQuizDataToFirebase } from "@/lib/quizSave";
+  12 | import { Answer } from "@/lib/quizStatistics";
+
+The export auth was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getAuthInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./Documents/GitHub/mie_project/components/App.tsx
+    ./Documents/GitHub/mie_project/app/page.tsx
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/components/App.tsx:9:1
+Export auth doesn't exist in target module
+   7 | import { SummaryPage } from "./SummaryPage";
+   8 | import { getRandomImages, ImageData } from "@/lib/imageDataset";
+>  9 | import { auth } from "@/lib/firebase";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { signInAnonymously } from "firebase/auth";
+  11 | import { saveQuizDataToFirebase } from "@/lib/quizSave";
+  12 | import { Answer } from "@/lib/quizStatistics";
+
+The export auth was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getAuthInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./Documents/GitHub/mie_project/components/App.tsx
+    ./Documents/GitHub/mie_project/app/page.tsx
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/components/App.tsx:9:1
+Export auth doesn't exist in target module
+   7 | import { SummaryPage } from "./SummaryPage";
+   8 | import { getRandomImages, ImageData } from "@/lib/imageDataset";
+>  9 | import { auth } from "@/lib/firebase";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { signInAnonymously } from "firebase/auth";
+  11 | import { saveQuizDataToFirebase } from "@/lib/quizSave";
+  12 | import { Answer } from "@/lib/quizStatistics";
+
+The export auth was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getAuthInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./Documents/GitHub/mie_project/components/App.tsx
+    ./Documents/GitHub/mie_project/app/page.tsx
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/components/App.tsx:9:1
+Export auth doesn't exist in target module
+   7 | import { SummaryPage } from "./SummaryPage";
+   8 | import { getRandomImages, ImageData } from "@/lib/imageDataset";
+>  9 | import { auth } from "@/lib/firebase";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { signInAnonymously } from "firebase/auth";
+  11 | import { saveQuizDataToFirebase } from "@/lib/quizSave";
+  12 | import { Answer } from "@/lib/quizStatistics";
+
+The export auth was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getAuthInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./Documents/GitHub/mie_project/components/App.tsx
+    ./Documents/GitHub/mie_project/app/page.tsx
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/components/App.tsx:9:1
+Export auth doesn't exist in target module
+   7 | import { SummaryPage } from "./SummaryPage";
+   8 | import { getRandomImages, ImageData } from "@/lib/imageDataset";
+>  9 | import { auth } from "@/lib/firebase";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { signInAnonymously } from "firebase/auth";
+  11 | import { saveQuizDataToFirebase } from "@/lib/quizSave";
+  12 | import { Answer } from "@/lib/quizStatistics";
+
+The export auth was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getAuthInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./Documents/GitHub/mie_project/components/App.tsx
+    ./Documents/GitHub/mie_project/app/page.tsx
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/components/App.tsx:9:1
+Export auth doesn't exist in target module
+   7 | import { SummaryPage } from "./SummaryPage";
+   8 | import { getRandomImages, ImageData } from "@/lib/imageDataset";
+>  9 | import { auth } from "@/lib/firebase";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { signInAnonymously } from "firebase/auth";
+  11 | import { saveQuizDataToFirebase } from "@/lib/quizSave";
+  12 | import { Answer } from "@/lib/quizStatistics";
+
+The export auth was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getAuthInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./Documents/GitHub/mie_project/components/App.tsx
+    ./Documents/GitHub/mie_project/app/page.tsx
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:07.201] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:13.401] Server  LOG     ✓ Compiled in 71ms
+[00:20:14.191] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:14.191] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:14.191] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:14.191] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:14.191] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:14.191] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:14.191] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-client] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:14.191] Browser ERROR   ./Documents/GitHub/mie_project/lib/quizSave.ts:1:1
+Export db doesn't exist in target module
+> 1 | import {db} from "./firebase";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import {collection, addDoc, Timestamp} from "firebase/firestore";
+  3 |
+  4 | interface DetailedAnswer {
+
+The export db was not found in module [project]/Documents/GitHub/mie_project/lib/firebase.ts [app-ssr] (ecmascript).
+Did you mean to import getDbInstance?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component Browser]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/GitHub/mie_project/lib/quizSave.ts [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Client Component SSR]
+    ./Documents/GitHub/mie_project/components/App.tsx [Server Component]
+    ./Documents/GitHub/mie_project/app/page.tsx [Server Component]
+[00:20:32.267] Server  LOG     ✓ Compiled in 56ms
