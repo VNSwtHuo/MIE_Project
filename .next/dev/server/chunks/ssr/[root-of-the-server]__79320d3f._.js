@@ -1818,25 +1818,7 @@ const firebaseConfig = {
     appId: ("TURBOPACK compile-time value", "1:440403940095:web:201263b6a5fb35002bf2ca"),
     measurementId: ("TURBOPACK compile-time value", "G-XPZN8EEMYV")
 };
-// Validate Firebase configuration
-function validateFirebaseConfig() {
-    const requiredFields = [
-        'apiKey',
-        'authDomain',
-        'projectId',
-        'storageBucket',
-        'messagingSenderId',
-        'appId'
-    ];
-    const missingFields = requiredFields.filter((field)=>!firebaseConfig[field]);
-    if (missingFields.length > 0) {
-        console.error('Missing Firebase configuration:', missingFields);
-        console.error('Please check your .env.local file has all NEXT_PUBLIC_FIREBASE_* variables');
-        return false;
-    }
-    return true;
-}
-// Initialize Firebase only on client side
+// Initialize Firebase unconditionally on client side
 let app;
 let db;
 let auth;

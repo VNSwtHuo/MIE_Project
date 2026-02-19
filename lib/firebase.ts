@@ -19,41 +19,25 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
-// Validate Firebase configuration
-function validateFirebaseConfig() {
-  const requiredFields = ['apiKey', 'authDomain', 'projectId', 'storageBucket', 'messagingSenderId', 'appId'];
-  const missingFields = requiredFields.filter(field => !firebaseConfig[field as keyof typeof firebaseConfig]);
-  
-  if (missingFields.length > 0) {
-    console.error('Missing Firebase configuration:', missingFields);
-    console.error('Please check your .env.local file has all NEXT_PUBLIC_FIREBASE_* variables');
-    return false;
-  }
-  return true;
-}
-
-// Initialize Firebase only on client side
+// Initialize Firebase unconditionally on client side
 let app: FirebaseApp | undefined;
 let db: Firestore | undefined;
 let auth: Auth | undefined;
 
 if (typeof window !== 'undefined') {
-  // Validate config before initializing
-  if (validateFirebaseConfig()) {
-    // Check if Firebase app is already initialized
-    if (!getApps().length) {
-      app = initializeApp(firebaseConfig);
-    } else {
-      app = getApps()[0];
-    }
-    
-    // Initialize analytics
-    getAnalytics(app);
-    
-    // Initialize services
-    db = getFirestore(app);
-    auth = getAuth(app);
+  // Check if Firebase app is already initialized
+  if (!getApps().length) {
+    app = initializeApp(firebaseConfig);
+  } else {
+    app = getApps()[0];
   }
+  
+  // Initialize analytics
+  getAnalytics(app);
+  
+  // Initialize services
+  db = getFirestore(app);
+  auth = getAuth(app);
 }
 
 export { app, db, auth };
