@@ -1430,7 +1430,7 @@ function SummaryPage({ answers, images, consented, mode1First, onRestart }) {
                                             imageData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: imageData.url,
                                                 alt: `Image ${index + 1}`,
-                                                className: "w-16 h-16 object-cover rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity",
+                                                className: "w-16 h-16 object-cover rounded-lg flex-shrink-0 cursor-pointer transition-opacity",
                                                 onClick: ()=>setEnlargedImage(imageData.url)
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/GitHub/mie_project/components/SummaryPage.tsx",
@@ -1811,13 +1811,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_p
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBM2JiZG3q6oJzik3TOPps02WF5ytx-K_A",
-    authDomain: "mie286-project.firebaseapp.com",
-    projectId: "mie286-project",
-    storageBucket: "mie286-project.firebasestorage.app",
-    messagingSenderId: "440403940095",
-    appId: "1:440403940095:web:201263b6a5fb35002bf2ca",
-    measurementId: "G-XPZN8EEMYV"
+    apiKey: ("TURBOPACK compile-time value", "AIzaSyBM2JiZG3q6oJzik3TOPps02WF5ytx-K_A"),
+    authDomain: ("TURBOPACK compile-time value", "mie286-project.firebaseapp.com"),
+    projectId: ("TURBOPACK compile-time value", "mie286-project"),
+    storageBucket: ("TURBOPACK compile-time value", "mie286-project.firebasestorage.app"),
+    messagingSenderId: ("TURBOPACK compile-time value", "440403940095"),
+    appId: ("TURBOPACK compile-time value", "1:440403940095:web:201263b6a5fb35002bf2ca"),
+    measurementId: ("TURBOPACK compile-time value", "G-XPZN8EEMYV")
 };
 const app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["initializeApp"])(firebaseConfig);
 // Initialize analytics only on client side

@@ -204,7 +204,7 @@ export function SummaryPage({
                       <img
                         src={imageData.url}
                         alt={`Image ${index + 1}`}
-                        className="w-16 h-16 object-cover rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity"
+                        className="w-16 h-16 object-cover rounded-lg flex-shrink-0 cursor-pointer transition-opacity"
                         onClick={() => setEnlargedImage(imageData.url)}
                       />
                     )}
