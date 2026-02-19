@@ -654,10 +654,12 @@ function formatTimeSeconds(milliseconds, decimals = 1) {
     const seconds = milliseconds / 1000;
     return seconds.toFixed(decimals);
 }
-function formatTimeMMSS(seconds) {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    return `${mins}:${String(Math.floor(secs)).padStart(2, "0")}`;
+function formatTimeMMSS(milliseconds) {
+    const totalSeconds = milliseconds / 1000;
+    const mins = Math.floor(totalSeconds / 60);
+    const secs = Math.floor(totalSeconds % 60);
+    const ms = Math.floor(milliseconds % 1000);
+    return `${mins}:${String(secs).padStart(2, "0")}.${String(ms).padStart(3, "0")}`;
 }
 }),
 "[project]/Documents/GitHub/mie_project/components/ImageEvaluationPage.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -717,13 +719,13 @@ function ImageEvaluationPage({ images, mode1First, onComplete }) {
     }, [
         currentIndex
     ]);
-    // Timer update
+    // Timer update (updates every 10ms to show milliseconds)
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const timer = setInterval(()=>{
             if (!isTimerPaused) {
-                setElapsedTime(Math.floor((Date.now() - startTime) / 1000));
+                setElapsedTime(Date.now() - startTime);
             }
-        }, 1000);
+        }, 10);
         return ()=>clearInterval(timer);
     }, [
         startTime,
@@ -1787,66 +1789,44 @@ module.exports = mod;
 "use strict";
 
 __turbopack_context__.s([
-    "getAppInstance",
-    ()=>getAppInstance,
-    "getAuthInstance",
-    ()=>getAuthInstance,
-    "getDbInstance",
-    ()=>getDbInstance,
-    "getFirebaseApp",
-    ()=>getFirebaseApp,
-    "getFirebaseAuth",
-    ()=>getFirebaseAuth,
-    "getFirebaseDb",
-    ()=>getFirebaseDb
+    "app",
+    ()=>app,
+    "auth",
+    ()=>auth,
+    "db",
+    ()=>db
 ]);
 // Import the functions you need from the SDKs you need
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$firebase$2f$app$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/firebase/app/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/@firebase/app/dist/esm/index.esm.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$firebase$2f$analytics$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/firebase/analytics/dist/index.mjs [app-ssr] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$firebase$2f$firestore$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/firebase/firestore/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/@firebase/firestore/dist/index.node.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$firebase$2f$auth$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/firebase/auth/dist/index.mjs [app-ssr] (ecmascript) <locals>");
-'use client';
+var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/GitHub/mie_project/node_modules/@firebase/auth/dist/node-esm/index.js [app-ssr] (ecmascript)");
 ;
 ;
 ;
 ;
-// Lazy initialize Firebase - only done on client when needed
-let app = null;
-let db = null;
-let auth = null;
-const initializeFirebase = ()=>{
-    // Only initialize once
-    if (app) return {
-        app,
-        db,
-        auth
-    };
-    // Only initialize on client side
-    if ("TURBOPACK compile-time truthy", 1) return {
-        app: null,
-        db: null,
-        auth: null
-    };
-    //TURBOPACK unreachable
-    ;
-    // Your web app's Firebase configuration
-    const firebaseConfig = undefined;
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: ("TURBOPACK compile-time value", "AIzaSyBM2JiZG3q6oJzik3TOPps02WF5ytx-K_A"),
+    authDomain: ("TURBOPACK compile-time value", "mie286-project.firebaseapp.com"),
+    projectId: ("TURBOPACK compile-time value", "mie286-project"),
+    storageBucket: ("TURBOPACK compile-time value", "mie286-project.firebasestorage.app"),
+    messagingSenderId: ("TURBOPACK compile-time value", "440403940095"),
+    appId: ("TURBOPACK compile-time value", "1:440403940095:web:201263b6a5fb35002bf2ca"),
+    measurementId: ("TURBOPACK compile-time value", "G-XPZN8EEMYV")
 };
-const getFirebaseApp = ()=>{
-    const { app } = initializeFirebase();
-    return app;
-};
-const getFirebaseDb = ()=>{
-    const { db } = initializeFirebase();
-    return db;
-};
-const getFirebaseAuth = ()=>{
-    const { auth } = initializeFirebase();
-    return auth;
-};
-const getAppInstance = ()=>getFirebaseApp();
-const getDbInstance = ()=>getFirebaseDb();
-const getAuthInstance = ()=>getFirebaseAuth();
+const app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["initializeApp"])(firebaseConfig);
+// Initialize analytics only on client side
+if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+;
+const db = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFirestore"])(app);
+const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAuth"])(app);
 }),
 "[project]/Documents/GitHub/mie_project/lib/quizSave.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -1862,10 +1842,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_p
 ;
 const saveQuizDataToFirebase = async (userId, answers, noFeedbackFirst)=>{
     try {
-        const db = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getDbInstance"])();
-        if (!db) {
-            throw new Error("Firebase database not initialized");
-        }
         const Accuracy = answers.filter((a)=>a.isCorrect).length / 20;
         const WFAccuracy = answers.filter((a)=>a.mode && a.isCorrect).length / 10;
         const WOFAccuracy = answers.filter((a)=>!a.mode && a.isCorrect).length / 10;
@@ -1880,21 +1856,21 @@ const saveQuizDataToFirebase = async (userId, answers, noFeedbackFirst)=>{
         const quizData = {
             userId,
             answers,
-            Accuracy: parseFloat((Accuracy * 100).toFixed(2)),
-            WFAccuracy: parseFloat((WFAccuracy * 100).toFixed(2)),
-            WOFAccuracy: parseFloat((WOFAccuracy * 100).toFixed(2)),
+            Accuracy: parseFloat((Accuracy * 100).toFixed(5)),
+            WFAccuracy: parseFloat((WFAccuracy * 100).toFixed(5)),
+            WOFAccuracy: parseFloat((WOFAccuracy * 100).toFixed(5)),
             totalTP,
             totalTN,
             WF_TP,
             WF_TN,
             WOF_TP,
             WOF_TN,
-            WFResponseTime: parseFloat((WFResponseTime / 1000).toFixed(2)),
-            WOFResponseTime: parseFloat((WOFResponseTime / 1000).toFixed(2)),
+            WFResponseTime: parseFloat(WFResponseTime.toFixed(5)),
+            WOFResponseTime: parseFloat(WOFResponseTime.toFixed(5)),
             noFeedbackFirst,
             timestamp: __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Timestamp"].now()
         };
-        const docRef = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["addDoc"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["collection"])(db, "quiz_results"), quizData);
+        const docRef = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["addDoc"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["collection"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["db"], "quiz_results"), quizData);
         console.log("Quiz data saved successfully: ", docRef.id);
     } catch (error) {
         console.error("Error saving quiz data: ", error);
@@ -1940,12 +1916,9 @@ function App() {
     const [userId, setUserId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const init = async ()=>{
-            const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAuthInstance"])();
-            if (auth) {
-                await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["signInAnonymously"])(auth);
-                if (auth.currentUser) {
-                    setUserId(auth.currentUser.uid);
-                }
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["signInAnonymously"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"]);
+            if (__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"].currentUser) {
+                setUserId(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"].currentUser.uid);
             }
         };
         init();
@@ -1998,14 +1971,14 @@ function App() {
                 onStart: handleStart
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mie_project/components/App.tsx",
-                lineNumber: 90,
+                lineNumber: 87,
                 columnNumber: 29
             }, this),
             phase === "instruction" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$InstructionPage$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["InstructionPage"], {
                 onBegin: handleBeginQuiz
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mie_project/components/App.tsx",
-                lineNumber: 92,
+                lineNumber: 89,
                 columnNumber: 35
             }, this),
             phase === "evaluation" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$ImageEvaluationPage$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ImageEvaluationPage"], {
@@ -2014,7 +1987,7 @@ function App() {
                 onComplete: handleEvaluationComplete
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mie_project/components/App.tsx",
-                lineNumber: 95,
+                lineNumber: 92,
                 columnNumber: 9
             }, this),
             phase === "summary" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$GitHub$2f$mie_project$2f$components$2f$SummaryPage$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SummaryPage"], {
@@ -2025,7 +1998,7 @@ function App() {
                 onRestart: handleRestart
             }, void 0, false, {
                 fileName: "[project]/Documents/GitHub/mie_project/components/App.tsx",
-                lineNumber: 103,
+                lineNumber: 100,
                 columnNumber: 9
             }, this)
         ]

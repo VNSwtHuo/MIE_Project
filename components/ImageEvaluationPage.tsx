@@ -58,13 +58,13 @@ export function ImageEvaluationPage({
     setElapsedTime(0);
   }, [currentIndex]);
 
-  // Timer update
+  // Timer update (updates every 10ms to show milliseconds)
   useEffect(() => {
     const timer = setInterval(() => {
       if (!isTimerPaused) {
-        setElapsedTime(Math.floor((Date.now() - startTime) / 1000));
+        setElapsedTime(Date.now() - startTime);
       }
-    }, 1000);
+    }, 10);
 
     return () => clearInterval(timer);
   }, [startTime, isTimerPaused]);

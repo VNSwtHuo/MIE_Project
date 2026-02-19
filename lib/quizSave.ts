@@ -1,4 +1,4 @@
-import {getDbInstance} from "./firebase";
+import {db} from "./firebase";
 import {collection, addDoc, Timestamp} from "firebase/firestore";
 
 interface DetailedAnswer {
@@ -6,8 +6,8 @@ interface DetailedAnswer {
   userAnswer: string; // "Fake" or "Real"
   correctAnswer: string; // "Fake" or "Real"
   isCorrect: number;
-  responseTime: number; // in seconds
-  mode: boolean; // 1 for with feedback
+  responseTime: number; 
+  mode: boolean; // true = with feedback, false = without feedback
 }
 
 interface QuizData {
@@ -33,11 +33,6 @@ export const saveQuizDataToFirebase = async (
     answers: DetailedAnswer[], 
     noFeedbackFirst: boolean) => {
         try {
-            const db = getDbInstance();
-            if (!db) {
-                throw new Error("Firebase database not initialized");
-            }
-
             const Accuracy = answers.filter((a) => a.isCorrect).length / 20;
             const WFAccuracy = answers.filter((a) => a.mode && a.isCorrect).length / 10;
             const WOFAccuracy = answers.filter((a) => !a.mode && a.isCorrect).length / 10;
@@ -53,17 +48,17 @@ export const saveQuizDataToFirebase = async (
         const quizData: QuizData = {
             userId,
             answers,
-            Accuracy: parseFloat((Accuracy * 100).toFixed(2)), // convert to percentage
-            WFAccuracy: parseFloat((WFAccuracy * 100).toFixed(2)),
-            WOFAccuracy: parseFloat((WOFAccuracy * 100).toFixed(2)),
+            Accuracy: parseFloat((Accuracy * 100).toFixed(5)), // convert to percentage with 5 decimal places
+            WFAccuracy: parseFloat((WFAccuracy * 100).toFixed(5)),
+            WOFAccuracy: parseFloat((WOFAccuracy * 100).toFixed(5)),
             totalTP,
             totalTN,
             WF_TP,
             WF_TN,
             WOF_TP,
             WOF_TN,
-            WFResponseTime: parseFloat((WFResponseTime / 1000).toFixed(2)), // seconds
-            WOFResponseTime: parseFloat((WOFResponseTime / 1000).toFixed(2)), // seconds
+            WFResponseTime: parseFloat(WFResponseTime.toFixed(5)), 
+            WOFResponseTime: parseFloat(WOFResponseTime.toFixed(5)), 
             noFeedbackFirst,
             timestamp: Timestamp.now(),
         };

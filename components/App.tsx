@@ -6,7 +6,7 @@ import { InstructionPage } from "./InstructionPage";
 import { ImageEvaluationPage } from "./ImageEvaluationPage";
 import { SummaryPage } from "./SummaryPage";
 import { getRandomImages, ImageData } from "@/lib/imageDataset";
-import { getAuthInstance } from "@/lib/firebase";
+import { auth } from "@/lib/firebase";
 import { signInAnonymously } from "firebase/auth";
 import { saveQuizDataToFirebase } from "@/lib/quizSave";
 import { Answer } from "@/lib/quizStatistics";
@@ -23,12 +23,9 @@ export default function App() {
 
   useEffect(() => {
     const init = async () => {
-      const auth = getAuthInstance();
-      if (auth) {
-        await signInAnonymously(auth);
-        if (auth.currentUser) {
-          setUserId(auth.currentUser.uid);
-        }
+      await signInAnonymously(auth);
+      if (auth.currentUser) {
+        setUserId(auth.currentUser.uid);
       }
     };
     init();

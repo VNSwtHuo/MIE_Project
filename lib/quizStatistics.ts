@@ -121,10 +121,12 @@ export function formatTimeSeconds(milliseconds: number, decimals: number = 1): s
 }
 
 /**
- * Format time in MM:SS format (for elapsed time display)
+ * Format time in MM:SS.mmm format (for elapsed time display with milliseconds)
  */
-export function formatTimeMMSS(seconds: number): string {
-  const mins = Math.floor(seconds / 60);
-  const secs = seconds % 60;
-  return `${mins}:${String(Math.floor(secs)).padStart(2, "0")}`;
+export function formatTimeMMSS(milliseconds: number): string {
+  const totalSeconds = milliseconds / 1000;
+  const mins = Math.floor(totalSeconds / 60);
+  const secs = Math.floor(totalSeconds % 60);
+  const ms = Math.floor(milliseconds % 1000);
+  return `${mins}:${String(secs).padStart(2, "0")}.${String(ms).padStart(3, "0")}`;
 }

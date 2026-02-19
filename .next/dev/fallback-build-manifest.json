@@ -1,6 +1,31 @@
 {
   "pages": {
-    "/_app": []
+    "/_app": [
+      "static/chunks/d898f_next_dist_compiled_85c477e5._.js",
+      "static/chunks/d898f_next_dist_shared_lib_a59a86f2._.js",
+      "static/chunks/d898f_next_dist_client_dc97b44c._.js",
+      "static/chunks/d898f_next_dist_8b3b2d1c._.js",
+      "static/chunks/d898f_next_app_140cf900.js",
+      "static/chunks/[next]_entry_page-loader_ts_9c5fc5fe._.js",
+      "static/chunks/d898f_react-dom_38d9e83e._.js",
+      "static/chunks/d898f_a31abaf5._.js",
+      "static/chunks/[root-of-the-server]__37716b57._.js",
+      "static/chunks/Documents_GitHub_mie_project_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-Documents_GitHub_mie_project_pages__app_e741173e._.js"
+    ],
+    "/_error": [
+      "static/chunks/d898f_next_dist_compiled_85c477e5._.js",
+      "static/chunks/d898f_next_dist_shared_lib_d603bd47._.js",
+      "static/chunks/d898f_next_dist_client_dc97b44c._.js",
+      "static/chunks/d898f_next_dist_93c0878a._.js",
+      "static/chunks/d898f_next_error_be79a59c.js",
+      "static/chunks/[next]_entry_page-loader_ts_622518c6._.js",
+      "static/chunks/d898f_react-dom_38d9e83e._.js",
+      "static/chunks/d898f_a31abaf5._.js",
+      "static/chunks/[root-of-the-server]__2ca917a5._.js",
+      "static/chunks/Documents_GitHub_mie_project_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-Documents_GitHub_mie_project_pages__error_40bb65b9._.js"
+    ]
   },
   "devFiles": [],
   "polyfillFiles": [],
