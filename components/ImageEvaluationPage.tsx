@@ -38,7 +38,7 @@ export function ImageEvaluationPage({
 
   const currentMode = getCurrentMode();
 
-  const moveToNext = () => {
+  const moveToNext = (finalAnswers?: Answer[]) => {
     setInlineFeedback(null);
     setStartTime(Date.now());
     setElapsedTime(0);
@@ -48,7 +48,7 @@ export function ImageEvaluationPage({
       setCurrentIndex(currentIndex + 1);
     } else {
       // Study complete
-      onComplete(answers);
+      onComplete(finalAnswers || answers);
     }
   };
 
@@ -93,7 +93,7 @@ export function ImageEvaluationPage({
       setInlineFeedback(answer);
     } else {
       // Mode 2: No feedback, move to next image immediately
-      moveToNext();
+      moveToNext(newAnswers);
     }
   };
 
