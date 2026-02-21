@@ -32,12 +32,15 @@ export interface ModeStatistics {
 }
 
 export function calculateOverallStats(answers: Answer[]): QuizStatistics {
+  // Ensure answers is an array (convert from array-like object if needed)
+  const answersArray = Array.isArray(answers) ? answers : (Object.values(answers) as Answer[]);
+  
   const totalQuestions = 20;
-  const correctAnswers = answers.filter((a) => a.isCorrect).length;
+  const correctAnswers = answersArray.filter((a) => a.isCorrect).length;
   const accuracy = (correctAnswers / totalQuestions) * 100;
   const averageResponseTime =
-    answers.reduce((sum, a) => sum + a.responseTime, 0) / totalQuestions;
-  const totalTime = answers.reduce((sum, a) => sum + a.responseTime, 0);
+    answersArray.reduce((sum, a) => sum + a.responseTime, 0) / totalQuestions;
+  const totalTime = answersArray.reduce((sum, a) => sum + a.responseTime, 0);
 
   return {
     totalQuestions,
@@ -67,8 +70,11 @@ export function calculateModeStats(
   answers: Answer[],
   mode1First: boolean
 ): ModeStatistics {
-  const firstSetAnswers = getAnswerSet(answers, 1);
-  const secondSetAnswers = getAnswerSet(answers, 2);
+  // Ensure answers is an array (convert from array-like object if needed)
+  const answersArray = Array.isArray(answers) ? answers : (Object.values(answers) as Answer[]);
+  
+  const firstSetAnswers = getAnswerSet(answersArray, 1);
+  const secondSetAnswers = getAnswerSet(answersArray, 2);
 
   // Determine which set corresponds to which mode
   const mode1Answers = mode1First ? firstSetAnswers : secondSetAnswers;

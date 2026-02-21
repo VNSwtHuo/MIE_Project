@@ -51,12 +51,14 @@ export default function App() {
   };
 
   const handleEvaluationComplete = async (completedAnswers: Answer[]) => {
-    setAnswers(completedAnswers);
+    // Ensure completedAnswers is an array (convert from array-like object if needed)
+    const answersArray = Array.isArray(completedAnswers) ? completedAnswers : (Object.values(completedAnswers) as Answer[]);
+    setAnswers(answersArray);
 
     // Save data to Firebase if user consented
     if (consented && userId) {
       try {
-        const detailedAnswers = completedAnswers.map((a) => ({
+        const detailedAnswers = answersArray.map((a) => ({
           imageId: a.imageId,
           userAnswer: a.userAnswer ? "Fake" : "Real",
           correctAnswer: a.correctAnswer ? "Fake" : "Real",

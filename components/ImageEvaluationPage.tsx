@@ -194,7 +194,7 @@ export function ImageEvaluationPage({
                   </div>
                 </div>
                 <button
-                  onClick={moveToNext}
+                  onClick={() => moveToNext()}
                   className="bg-[#F1C376] hover:bg-[#F1C376]/70 text-[#7B542F] font-bold py-3 px-12 rounded-lg transition-colors whitespace-nowrap md:w-auto w-full"
                 >
                   {currentIndex < totalImages - 1 ? "Next" : "View Results"}

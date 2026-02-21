@@ -8,8 +8,8 @@ export interface ImageData {
 export const imageDataset: ImageData[] = [
   {
     id: "img001",
-    url: "https://images.unsplash.com/photo-1618886850494-c79fd48305b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHBob3RvZ3JhcGh5JTIwcGVyc29ufGVufDF8fHx8MTc3MDM2MDc2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: false
+    url: "https://images.squarespace-cdn.com/content/v1/67afcefc652970764b44230f/a6c49453-1f5b-4994-bf6b-e3daf179bd90/NAT+GEO+SMALL-14.jpg?format=2500w",
+    isAIGenerated: false,
   },
   {
     id: "img002",
