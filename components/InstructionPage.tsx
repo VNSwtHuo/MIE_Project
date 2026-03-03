@@ -25,10 +25,10 @@ export function InstructionPage({ onBegin }: InstructionPageProps) {
                 <Camera className="w-6 h-6 text-[#9E3B3B] flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-base text-gray-900 mb-2">
-                    <strong>1. What we count as a "Real Photo"?</strong>
+                    <strong>1. What we count as "Real Images"?</strong>
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed">
-                    Real photos refer to photos taken by cameras.
+                    Real images refer to photos taken by cameras.
                     Post-processing such as color correction and tonal
                     adjustments <strong>MAY</strong> be applied. However, to
                     reduce the difficulty, there are <strong>NO</strong> photos
@@ -46,7 +46,7 @@ export function InstructionPage({ onBegin }: InstructionPageProps) {
                 <Sparkles className="w-6 h-6 text-[#9E3B3B] flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-base text-gray-900 mb-2">
-                    <strong>2. What we count as "AI-Generated Images?"</strong>
+                    <strong>2. What we count as "AI-Generated Images"?</strong>
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed">
                     AI-generated images refer to the pictures that were entirely

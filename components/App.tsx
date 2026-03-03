@@ -5,7 +5,7 @@ import { StartPage } from "./StartPage";
 import { InstructionPage } from "./InstructionPage";
 import { ImageEvaluationPage } from "./ImageEvaluationPage";
 import { SummaryPage } from "./SummaryPage";
-import { getRandomImages, ImageData } from "@/lib/imageDataset";
+import { getFixedShuffledImages, ImageData } from "@/lib/imageDataset";
 import { auth } from "@/lib/firebase";
 import { signInAnonymously } from "firebase/auth";
 import { saveQuizDataToFirebase } from "@/lib/quizSave";
@@ -38,8 +38,8 @@ export default function App() {
   };
 
   const handleBeginQuiz = () => {
-    // Select 20 random images
-    const images = getRandomImages(20);
+    // Select 10 fixed images per section, shuffled for each player
+    const images = getFixedShuffledImages();
     setSelectedImages(images);
 
     // Randomly determine mode order
@@ -52,7 +52,9 @@ export default function App() {
 
   const handleEvaluationComplete = async (completedAnswers: Answer[]) => {
     // Ensure completedAnswers is an array (convert from array-like object if needed)
-    const answersArray = Array.isArray(completedAnswers) ? completedAnswers : (Object.values(completedAnswers) as Answer[]);
+    const answersArray = Array.isArray(completedAnswers)
+      ? completedAnswers
+      : (Object.values(completedAnswers) as Answer[]);
     setAnswers(answersArray);
 
     // Save data to Firebase if user consented

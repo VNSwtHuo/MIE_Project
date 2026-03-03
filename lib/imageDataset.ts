@@ -7,7 +7,7 @@ export interface ImageData {
 
 export const imageDataset: ImageData[] = [
   {
-    id: "img001",
+    id: "img001", // TAYLOR PENDLETON 
     url: "https://images.squarespace-cdn.com/content/v1/67afcefc652970764b44230f/a6c49453-1f5b-4994-bf6b-e3daf179bd90/NAT+GEO+SMALL-14.jpg?format=2500w",
     isAIGenerated: false,
   },
@@ -112,4 +112,11 @@ export const imageDataset: ImageData[] = [
 export function getRandomImages(count: number): ImageData[] {
   const shuffled = [...imageDataset].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, count);
+}
+
+// Function to get fixed 10 images per section, but shuffled for each player
+export function getFixedShuffledImages(): ImageData[] {
+  const firstSection = [...imageDataset.slice(0, 10)].sort(() => Math.random() - 0.5);
+  const secondSection = [...imageDataset.slice(10, 20)].sort(() => Math.random() - 0.5);
+  return [...firstSection, ...secondSection];
 }
