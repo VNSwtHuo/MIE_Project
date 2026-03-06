@@ -119,13 +119,13 @@ export const imageDataset: ImageData[] = [
     id: "img019",
     url: "./images/real9.jpg",
     isAIGenerated: false,
-    source: "Haoyu Liu"
+    source: "Haoyu Liu, groupmember in the project"
   },
   {
     id: "img020",
     url: "./images/real10.jpg",
     isAIGenerated: false,
-    source: "Haoyu Liu"
+    source: "Haoyu Liu, groupmember in the project"
   }
 ];
 
