@@ -11,10 +11,10 @@ export const imageDataset: ImageData[] = [
     id: "img001", // 风景 真 by Taylor pendleton https://www.taylorpendleton.com/natgeo
     url: "./images/real5.jpg",
     isAIGenerated: false,
-    source: "Taylor pendleton"
+    source: "Taylor Pendleton"
   },
   {
-    id: "img002", 
+    id: "img002",
     url: "./images/fake6.jpg",
     isAIGenerated: true,
     source: "Nano Banana pro"
