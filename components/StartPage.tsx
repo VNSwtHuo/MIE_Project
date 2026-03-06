@@ -36,14 +36,13 @@ export function StartPage({ onStart }: StartPageProps) {
         {/* Description */}
         <div className="mb-8 space-y-4">
           <p className="text-lg text-gray-700 leading-relaxed">
-            You will take a short but fun quiz where you will identify whether{" "}
+            You will take a short quiz where you will identify whether{" "}
             <strong>20 images</strong> are AI-generated or real.{" "}
             <strong>
               You may receive the correct answer immediately after each image,
               or receive no feedback until the end.
             </strong>{" "}
-            After the quiz, you will see a summary of how well you did
-            throughout the test!
+            After the quiz, you will see a summary of how well you did!
           </p>
 
           {/* Feature highlights */}
@@ -53,7 +52,7 @@ export function StartPage({ onStart }: StartPageProps) {
               <p className="text-sm text-gray-700">
                 <strong>20 Images</strong>
               </p>
-              <p className="text-xs text-gray-600">Quick test</p>
+              <p className="text-xs text-gray-600">Quick quiz</p>
             </div>
             <div className="bg-[#F1C376]/30 rounded-lg p-4 text-center">
               <Clock className="w-8 h-8 text-[#F1C376] mx-auto mb-2" />
@@ -67,17 +66,17 @@ export function StartPage({ onStart }: StartPageProps) {
               <p className="text-sm text-gray-700">
                 <strong>Anonymous</strong>
               </p>
-              <p className="text-xs text-gray-600">Data Collection</p>
+              <p className="text-xs text-gray-600">
+                Data Collection via Firebase
+              </p>
             </div>
           </div>
 
           {/* Privacy Notice */}
           <div className="bg-[#F7E6C4]/30 border-l-4 border-[#F1C376] rounded-r-lg p-4">
             <p className="text-sm text-gray-700 leading-relaxed">
-              Your responses will be used for winter 2026 semester MIE286 course
-              project <strong>only if you consent</strong>. Your data will never
-              be associated with personal information, shared, or used for any
-              purpose other than for this MIE286 project data analysis.{" "}
+              Your responses will only be used for winter 2026 semester MIE286
+              course project <strong>only if you consent</strong>.{" "}
               <strong>
                 Even if you do not agree to data collection, you can still take
                 this fun quiz!

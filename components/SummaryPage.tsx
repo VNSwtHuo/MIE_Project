@@ -66,7 +66,7 @@ export function SummaryPage({
           {/* LEFT COLUMN: Summary Info */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <h1 className="text-3xl mb-2 text-black font-semibold">
-              Quiz Complete!
+              Quiz Completed! 🥳
             </h1>
             <p className="text-gray-600 mb-6">
               Thank you for participating in our game!
