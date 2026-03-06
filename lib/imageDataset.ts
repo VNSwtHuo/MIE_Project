@@ -15,28 +15,33 @@ export const imageDataset: ImageData[] = [
   },
   {
     id: "img002", 
-    url: "https://images.unsplash.com/photo-1616386573884-22531fd226e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYW5kc2NhcGUlMjBuYXR1cmUlMjBtb3VudGFpbnxlbnwxfHx8fDE3NzAzODQ4ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: true
+    url: "./images/fake6.jpg",
+    isAIGenerated: true,
+    source: "Nano Banana pro"
   },
   {
     id: "img003",
-    url: "https://images.unsplash.com/photo-1695067438561-75492f7b6a9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZ3xlbnwxfHx8fDE3NzAzMjA1ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: false
+    url: "./images/fake7.jpg",
+    isAIGenerated: true,
+    source: "Nano Banana pro"
   },
   {
     id: "img004",
-    url: "https://images.unsplash.com/photo-1705254613735-1abb457f8a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGFydCUyMGNvbG9yZnVsfGVufDF8fHx8MTc3MDQwNTc2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: true
+    url: "./images/fake8.jpg",
+    isAIGenerated: true,
+    source: "Nano Banana pro"
   },
   {
     id: "img005",
-    url: "https://images.unsplash.com/photo-1513563326940-e76e4641069e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXR5JTIwc2t5bGluZSUyMG5pZ2h0fGVufDF8fHx8MTc3MDM4MDE4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: false
+    url: "./images/fake9.jpg",
+    isAIGenerated: true,
+    source: "Nano Banana pro"
   },
   {
     id: "img006",
-    url: "https://images.unsplash.com/photo-1698309627162-8ce7442ab855?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwcGhvdG9ncmFwaHklMjBtZWFsfGVufDF8fHx8MTc3MDM3OTAwNXww&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: true
+    url: "./images/fake10.jpg",
+    isAIGenerated: true,
+    source: "Nano Banana pro"
   },
   {
     id: "img007", // 群像 真 by Rod Waddington
@@ -94,28 +99,33 @@ export const imageDataset: ImageData[] = [
   },
   {
     id: "img016",
-    url: "https://images.unsplash.com/photo-1661362758906-3a85700516c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzdW5zZXQlMjBza3klMjBjbG91ZHN8ZW58MXx8fHwxNzcwMzY3OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: true
+    url: "./images/real6.jpg",
+    isAIGenerated: false,
+    source: "Farnaz Kohankhaki from pexels.com"
   },
   {
     id: "img017",
-    url: "https://images.unsplash.com/photo-1606388701602-2e3727da5b28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx3aW50ZXIlMjBzbm93JTIwbGFuZHNjYXBlfGVufDF8fHx8MTc3MDMyMTAzMnww&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: false
+    url: "./images/real7.jpg",
+    isAIGenerated: false,
+    source: "Nataliya Vaitkevich from pexels.com"
   },
   {
     id: "img018",
-    url: "https://images.unsplash.com/photo-1642316655095-6349aa377ce5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx0ZWNobm9sb2d5JTIwY29tcHV0ZXIlMjBkaWdpdGFsfGVufDF8fHx8MTc3MDQwNTc2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: true
+    url: "./images/real8.jpg",
+    isAIGenerated: false,
+    source: "Ryan Lansdown from pexels.com"
   },
   {
     id: "img019",
-    url: "https://images.unsplash.com/photo-1696245843980-79b69e076ffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMGluc3RydW1lbnRzJTIwZ3VpdGFyfGVufDF8fHx8MTc3MDQwNTc2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: false
+    url: "./images/real9.jpg",
+    isAIGenerated: false,
+    source: "Haoyu Liu"
   },
   {
     id: "img020",
-    url: "https://images.unsplash.com/photo-1704048001164-9e454dd611e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYXJkZW4lMjBwbGFudHMlMjBmbG93ZXJzfGVufDF8fHx8MTc3MDMwOTUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
-    isAIGenerated: true
+    url: "./images/real10.jpg",
+    isAIGenerated: false,
+    source: "Haoyu Liu"
   }
 ];
 
