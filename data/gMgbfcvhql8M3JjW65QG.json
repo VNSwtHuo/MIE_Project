@@ -1,0 +1,178 @@
+{
+  "Accuracy": 80,
+  "WFAccuracy": 80,
+  "WFResponseTime": 27.052,
+  "WF_TN": 4,
+  "WF_TP": 4,
+  "WOFAccuracy": 80,
+  "WOFResponseTime": 26.153,
+  "WOF_TN": 4,
+  "WOF_TP": 4,
+  "answers": [
+    {
+      "correctAnswer": "Real",
+      "imageId": "img010",
+      "isCorrect": 0,
+      "mode": false,
+      "responseTime": 3.466,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img009",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 1.864,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img003",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 2.956,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img006",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 1.752,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img002",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 3.095,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img001",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 1.763,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img008",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 4.29,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img004",
+      "isCorrect": 0,
+      "mode": false,
+      "responseTime": 2.179,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img007",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 2.045,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img005",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 2.743,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img020",
+      "isCorrect": 0,
+      "mode": true,
+      "responseTime": 2.111,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img011",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 3.025,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img016",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 4.773,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img012",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 1.679,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img017",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 2.179,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img014",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 4.54,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img018",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 1.745,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img013",
+      "isCorrect": 0,
+      "mode": true,
+      "responseTime": 2.944,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img019",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 2.127,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img015",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 1.929,
+      "userAnswer": "Fake"
+    }
+  ],
+  "noFeedbackFirst": true,
+  "timestamp": null,
+  "totalTN": 8,
+  "totalTP": 8,
+  "userId": "Y5XyyMMBOdaxEMuRdo5qbNf3TJ92"
+}

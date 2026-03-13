@@ -4,17 +4,25 @@ import React, { useState } from "react";
 import { Shield, Clock, Image } from "lucide-react";
 
 interface StartPageProps {
-  onStart: (consented: boolean) => void;
+  onStart: (consented: boolean, gender: string, age: string) => void;
 }
 
 export function StartPage({ onStart }: StartPageProps) {
   const [agreed, setAgreed] = useState(true);
+  const [gender, setGender] = useState("");
+  const [age, setAge] = useState("");
+  const [errors, setErrors] = useState({ gender: false, age: false });
 
   const handleNext = () => {
-    if (!agreed) {
-      onStart(false);
-    } else {
-      onStart(true);
+    const newErrors = { gender: !gender, age: !age };
+    setErrors(newErrors);
+    
+    if (!newErrors.gender && !newErrors.age) {
+      if (!agreed) {
+        onStart(false, gender, age);
+      } else {
+        onStart(true, gender, age);
+      }
     }
   };
 
@@ -85,6 +93,58 @@ export function StartPage({ onStart }: StartPageProps) {
               <strong>please don't take another quiz attempt</strong> to ensure
               data integrity and accuracy.
             </p>
+          </div>
+        </div>
+
+        {/* Gender and Age Section */}
+        <div className="mb-8 space-y-4">
+          <h2 className="text-xl font-semibold text-gray-900">Before you start</h2>
+          
+          {/* Gender Selection */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Gender
+            </label>
+            <div className="space-y-2">
+              {["Male", "Female", "Other"].map((option) => (
+                <label key={option} className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value={option.toLowerCase()}
+                    checked={gender === option.toLowerCase()}
+                    onChange={(e) => {
+                      setGender(e.target.value);
+                      setErrors({ ...errors, gender: false });
+                    }}
+                    className="w-4 h-4 text-[#606C5D] border-gray-300 focus:ring-2 focus:ring-[#606C5D] cursor-pointer"
+                  />
+                  <span className="text-gray-700">{option}</span>
+                </label>
+              ))}
+            </div>
+            {errors.gender && <p className="text-red-500 text-sm mt-1">Please select your gender</p>}
+          </div>
+
+          {/* Age Input */}
+          <div>
+            <label htmlFor="age" className="block text-sm font-medium text-gray-700 mb-2">
+              Age
+            </label>
+            <input
+              id="age"
+              type="number"
+              min="1"
+              max="150"
+              placeholder="Enter your age"
+              value={age}
+              onChange={(e) => {
+                setAge(e.target.value);
+                setErrors({ ...errors, age: false });
+              }}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#606C5D] text-gray-900"
+            />
+            {errors.age && <p className="text-red-500 text-sm mt-1">Please enter your age</p>}
           </div>
         </div>
 

@@ -1,0 +1,194 @@
+{
+  "Accuracy": 80,
+  "WFAccuracy": 70,
+  "WFResponseTime": 34.363,
+  "WF_TN": 4,
+  "WF_TP": 3,
+  "WOFAccuracy": 90,
+  "WOFResponseTime": 38.998,
+  "WOF_TN": 4,
+  "WOF_TP": 5,
+  "answers": [
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img004",
+      "isCorrect": 0,
+      "mode": true,
+      "responseTime": 4.841,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img003",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 2.93,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img001",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 4.682,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img010",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 2.943,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img009",
+      "isCorrect": 0,
+      "mode": true,
+      "responseTime": 4.813,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img007",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 1.827,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img005",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 5.416,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img002",
+      "isCorrect": 0,
+      "mode": true,
+      "responseTime": 3.359,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img008",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 2.026,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img006",
+      "isCorrect": 1,
+      "mode": true,
+      "responseTime": 1.526,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img014",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 1.698,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img011",
+      "isCorrect": 0,
+      "mode": false,
+      "responseTime": 8.37,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img017",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 7.471,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img016",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 1.917,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img018",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 3.371,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img012",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 3.384,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img015",
+      "isCorrect": 0,
+      "mode": false,
+      "responseTime": 2.466,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img019",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 3.189,
+      "userAnswer": "Real"
+    },
+    {
+      "correctAnswer": "Real",
+      "imageId": "img020",
+      "isCorrect": 0,
+      "mode": false,
+      "responseTime": 1.047,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img013",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 4.337,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img013",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 1.014,
+      "userAnswer": "Fake"
+    },
+    {
+      "correctAnswer": "Fake",
+      "imageId": "img013",
+      "isCorrect": 1,
+      "mode": false,
+      "responseTime": 0.734,
+      "userAnswer": "Fake"
+    }
+  ],
+  "noFeedbackFirst": false,
+  "timestamp": null,
+  "totalTN": 8,
+  "totalTP": 8,
+  "userId": "WOn04wK2b5TBHq9OgZTCNmLSzhB2"
+}

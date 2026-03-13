@@ -20,6 +20,8 @@ export default function App() {
   const [mode1First, setMode1First] = useState<boolean>(false);
   const [answers, setAnswers] = useState<Answer[]>([]);
   const [userId, setUserId] = useState<string | null>(null);
+  const [gender, setGender] = useState<string>("");
+  const [age, setAge] = useState<string>("");
 
   useEffect(() => {
     const init = async () => {
@@ -32,8 +34,10 @@ export default function App() {
     init();
   }, []);
 
-  const handleStart = (consentGiven: boolean) => {
+  const handleStart = (consentGiven: boolean, userGender: string, userAge: string) => {
     setConsented(consentGiven);
+    setGender(userGender);
+    setAge(userAge);
     setPhase("instruction");
   };
 
@@ -69,7 +73,7 @@ export default function App() {
           mode: a.mode, // true = with feedback, false = without feedback
         }));
 
-        await saveQuizDataToFirebase(userId, detailedAnswers, !mode1First);
+        await saveQuizDataToFirebase(userId, detailedAnswers, !mode1First, gender, age);
         console.log("Quiz data successfully saved to Firebase");
       } catch (error) {
         console.error("Failed to save quiz data:", error);

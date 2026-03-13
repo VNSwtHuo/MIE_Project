@@ -12,6 +12,8 @@ interface DetailedAnswer {
 
 interface QuizData {
     userId: string;
+    gender: string;
+    age: string;
     answers: DetailedAnswer[];
     Accuracy: number; // percentage of correct answers
     WFAccuracy: number; // with feedback accuracy 
@@ -31,7 +33,9 @@ interface QuizData {
 export const saveQuizDataToFirebase = async (
     userId: string, 
     answers: DetailedAnswer[], 
-    noFeedbackFirst: boolean) => {
+    noFeedbackFirst: boolean,
+    gender: string,
+    age: string) => {
         try {
             if (!db) {
                 throw new Error("Firebase not initialized");
@@ -51,6 +55,8 @@ export const saveQuizDataToFirebase = async (
 
         const quizData: QuizData = {
             userId,
+            gender,
+            age,
             answers,
             Accuracy: parseFloat((Accuracy * 100).toFixed(5)), // convert to percentage with 5 decimal places
             WFAccuracy: parseFloat((WFAccuracy * 100).toFixed(5)),
